@@ -1,0 +1,221 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "location_name": "Gedung A",
+      "description": "Main warehouse for storing finished goods",
+      "status": "Active",
+      "total_asset": {
+        "total": 0,
+        "tags": 0,
+        "wo_tags": 0
+      },
+      "physical_check": 0,
+      "repair": 0,
+      "asset_out": 0,
+      "disposal": 0,
+      "available": 0,
+      "sub_locations": [
+        {
+          "id": 1,
+          "sub_location_name": "Storage Room A",
+          "sub_sub_locations": [
+            {
+              "id": 1,
+              "sub_sub_location_name": "Shelf 1"
+            },
+            {
+              "id": 2,
+              "sub_sub_location_name": "Shelf 2"
+            },
+            {
+              "id": 3,
+              "sub_sub_location_name": "Cabinet 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "location_name": "Gedung B",
+      "description": "Small room for storing office supplies",
+      "status": "Active",
+      "total_asset": {
+        "total": 0,
+        "tags": 0,
+        "wo_tags": 0
+      },
+      "physical_check": 0,
+      "repair": 0,
+      "asset_out": 0,
+      "disposal": 0,
+      "available": 0,
+      "sub_locations": [
+        {
+          "id": 1,
+          "sub_location_name": "Storage Room A",
+          "sub_sub_locations": [
+            {
+              "id": 1,
+              "sub_sub_location_name": "Shelf 1"
+            },
+            {
+              "id": 2,
+              "sub_sub_location_name": "Shelf 2"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "sub_location_name": "Storage Room B",
+          "sub_sub_locations": [
+            {
+              "id": 1,
+              "sub_sub_location_name": "Shelf 1"
+            },
+            {
+              "id": 2,
+              "sub_sub_location_name": "Shelf 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "location_name": "Gedung C",
+      "description": "Secured room for housing servers and network equipment",
+      "status": "Active",
+      "total_asset": {
+        "total": 0,
+        "tags": 0,
+        "wo_tags": 0
+      },
+      "physical_check": 0,
+      "repair": 0,
+      "asset_out": 0,
+      "disposal": 0,
+      "available": 0,
+      "sub_locations": [
+        {
+          "id": 2,
+          "sub_location_name": "Server Room B",
+          "sub_sub_locations": [
+            {
+              "id": 1,
+              "sub_sub_location_name": "Rack 1"
+            },
+            {
+              "id": 2,
+              "sub_sub_location_name": "Rack 2"
+            },
+            {
+              "id": 3,
+              "sub_sub_location_name": "Cabinet 1"
+            },
+            {
+              "id": 4,
+              "sub_sub_location_name": "Cabinet 2"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "sub_location_name": "Server Room C",
+          "sub_sub_locations": [
+            {
+              "id": 1,
+              "sub_sub_location_name": "Rack 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "location_name": "Gedung D",
+      "description": "First-floor office room for department A",
+      "status": "Inactive",
+      "total_asset": {
+        "total": 0,
+        "tags": 0,
+        "wo_tags": 0
+      },
+      "physical_check": 0,
+      "repair": 0,
+      "asset_out": 0,
+      "disposal": 0,
+      "available": 0,
+      "sub_locations": []
+    },
+    {
+      "id": 5,
+      "location_name": "Gedung E",
+      "description": "-",
+      "status": "Inactive",
+      "total_asset": {
+        "total": 0,
+        "tags": 0,
+        "wo_tags": 0
+      },
+      "physical_check": 0,
+      "repair": 0,
+      "asset_out": 0,
+      "disposal": 0,
+      "available": 0,
+      "sub_locations": [
+        {
+          "id": 3,
+          "sub_location_name": "Warehouse C",
+          "sub_sub_locations": [
+            {
+              "id": 1,
+              "sub_sub_location_name": "Section A"
+            },
+            {
+              "id": 2,
+              "sub_sub_location_name": "Section B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "location_name": "Gedung F",
+      "description": "-",
+      "status": "Inactive",
+      "total_asset": {
+        "total": 0,
+        "tags": 0,
+        "wo_tags": 0
+      },
+      "physical_check": 0,
+      "repair": 0,
+      "asset_out": 0,
+      "disposal": 0,
+      "available": 0,
+      "sub_locations": [
+        {
+          "id": 6,
+          "sub_location_name": "Warehouse D",
+          "sub_sub_locations": [
+            {
+              "id": 1,
+              "sub_sub_location_name": "Section A"
+            },
+            {
+              "id": 2,
+              "sub_sub_location_name": "Section B"
+            },
+            {
+              "id": 3,
+              "sub_sub_location_name": "Section C"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

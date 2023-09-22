@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "sub_location_name": "1st Floor",
+      "sub_sub_locations": [
+        {
+          "id": 1,
+          "sub_sub_location_name": "IT Room"
+        },
+        {
+          "id": 2,
+          "sub_sub_location_name": "Storage Room"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sub_location_name": "2nd Floor",
+      "sub_sub_locations": [
+        {
+          "id": 1,
+          "sub_sub_location_name": "Meeting Room"
+        },
+        {
+          "id": 2,
+          "sub_sub_location_name": "Office Room"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sub_location_name": "3rd Floor",
+      "sub_sub_locations": [
+        
+      ]
+    }
+  ]
+}

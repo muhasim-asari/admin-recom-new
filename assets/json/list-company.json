@@ -1,0 +1,109 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "company_name": "ABC Corporation",
+            "group_name": "ABC Group",
+            "phone_number": "+1 123-456-7890",
+            "website": "www.abc-corp.com"
+        },
+        {
+            "id": 2,
+            "company_name": "XYZ Corporation",
+            "group_name": "XYZ Group",
+            "phone_number": "+1 987-654-3210",
+            "website": "www.xyz-corp.com"
+        },
+        {
+            "id": 3,
+            "company_name": "PQR Inc.",
+            "group_name": "PQR Group",
+            "phone_number": "+1 555-123-4567",
+            "website": "www.pqr-inc.com"
+        },
+        {
+            "id": 4,
+            "company_name": "LMN Enterprises",
+            "group_name": "LMN Group",
+            "phone_number": "+1 444-789-1234",
+            "website": "www.lmn-enterprises.com"
+        },
+        {
+            "id": 5,
+            "company_name": "123 Corporation",
+            "group_name": "123 Group",
+            "phone_number": "+1 999-888-7777",
+            "website": "www.123-corp.com"
+        },
+        {
+            "id": 6,
+            "company_name": "DEF Industries",
+            "group_name": "DEF Group",
+            "phone_number": "+1 222-333-4444",
+            "website": "www.def-industries.com"
+        },
+        {
+            "id": 7,
+            "company_name": "MNO Corporation",
+            "group_name": "MNO Group",
+            "phone_number": "+1 777-888-9999",
+            "website": "www.mno-corp.com"
+        },
+        {
+            "id": 8,
+            "company_name": "GHI Enterprises",
+            "group_name": "GHI Group",
+            "phone_number": "+1 111-222-3333",
+            "website": "www.ghi-enterprises.com"
+        },
+        {
+            "id": 9,
+            "company_name": "RST Corporation",
+            "group_name": "RST Group",
+            "phone_number": "+1 666-555-4444",
+            "website": "www.rst-corp.com"
+        },
+        {
+            "id": 10,
+            "company_name": "UVW Industries",
+            "group_name": "UVW Group",
+            "phone_number": "+1 333-222-1111",
+            "website": "www.uvw-industries.com"
+        },
+        {
+            "id": 11,
+            "company_name": "HIJ Corporation",
+            "group_name": "HIJ Group",
+            "phone_number": "+1 777-999-1111",
+            "website": "www.hij-corp.com"
+        },
+        {
+            "id": 12,
+            "company_name": "EFG Enterprises",
+            "group_name": "EFG Group",
+            "phone_number": "+1 444-333-2222",
+            "website": "www.efg-enterprises.com"
+        },
+        {
+            "id": 13,
+            "company_name": "STU Corporation",
+            "group_name": "STU Group",
+            "phone_number": "+1 888-999-6666",
+            "website": "www.stu-corp.com"
+        },
+        {
+            "id": 14,
+            "company_name": "NOP Inc.",
+            "group_name": "NOP Group",
+            "phone_number": "+1 555-666-7777",
+            "website": "www.nop-inc.com"
+        },
+        {
+            "id": 15,
+            "company_name": "QRS Enterprises",
+            "group_name": "QRS Group",
+            "phone_number": "+1 222-111-0000",
+            "website": "www.qrs-enterprises.com"
+        }
+    ]
+}

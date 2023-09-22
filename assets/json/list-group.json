@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "group_name": "ABC Group",
+      "website": "www.abc-corp.com"
+    },
+    {
+      "id": 2,
+      "group_name": "XYZ Group",
+      "website": "www.xyz-corp.com"
+    },
+    {
+      "id": 3,
+      "group_name": "PQR Group",
+      "website": "www.pqr-inc.com"
+    },
+    {
+      "id": 4,
+      "group_name": "LMN Group",
+      "website": "www.lmn-enterprises.com"
+    },
+    {
+      "id": 5,
+      "group_name": "123 Group",
+      "website": "www.123-corp.com"
+    },
+    {
+      "id": 6,
+      "group_name": "DEF Group",
+      "website": "www.def-industries.com"
+    },
+    {
+      "id": 7,
+      "group_name": "MNO Group",
+      "website": "www.mno-corp.com"
+    },
+    {
+      "id": 8,
+      "group_name": "GHI Group",
+      "website": "www.ghi-enterprises.com"
+    },
+    {
+      "id": 9,
+      "group_name": "RST Group",
+      "website": "www.rst-corp.com"
+    },
+    {
+      "id": 10,
+      "group_name": "UVW Group",
+      "website": "www.uvw-industries.com"
+    },
+    {
+      "id": 11,
+      "group_name": "HIJ Group",
+      "website": "www.hij-corp.com"
+    },
+    {
+      "id": 12,
+      "group_name": "EFG Group",
+      "website": "www.efg-enterprises.com"
+    },
+    {
+      "id": 13,
+      "group_name": "STU Group",
+      "website": "www.stu-corp.com"
+    },
+    {
+      "id": 14,
+      "group_name": "NOP Group",
+      "website": "www.nop-inc.com"
+    },
+    {
+      "id": 15,
+      "group_name": "QRS Group",
+      "website": "www.qrs-enterprises.com"
+    }
+  ]
+}

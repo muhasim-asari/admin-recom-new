@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "item_number": "IN-20230801-A001",
+            "po_number": "PO-02072023-001",
+            "serial_number": "SN-0001",
+            "pic": "Andi Setyawan",
+            "location": "Gedung A",
+            "sublocation": "Lantai 2",
+            "sub_sublocation": "Ruang B",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "22-07-2023",
+            "updated_by": "John Smith",
+            "tag": "20230806162445FFA-0001",
+            "acquisition_cost": "IDR 250.000"
+        },
+        {
+            "id": 2,
+            "item_number": "IN-20230801-A002",
+            "po_number": "PO-02072023-001",
+            "serial_number": "SN-0002",
+            "pic": "Budiman",
+            "location": "Gedung A",
+            "sublocation": "Lantai 3",
+            "sub_sublocation": "Ruang A",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "22-07-2023",
+            "updated_by": "John Smith",
+            "tag": "20230806162445FFA-0002",
+            "acquisition_cost": "IDR 150.000"
+        },
+        {
+            "id": 3,
+            "item_number": "IN-20230801-A003",
+            "po_number": "PO-02072023-001",
+            "serial_number": "SN-0003",
+            "pic": "Budiman",
+            "location": "Gedung A",
+            "sublocation": "Lantai 3",
+            "sub_sublocation": "Ruang B",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "22-07-2023",
+            "updated_by": "John Smith",
+            "tag": "20230806162445FFA-0003",
+            "acquisition_cost": "IDR 220.000"
+        },
+        {
+            "id": 4,
+            "item_number": "IN-20230801-A004",
+            "po_number": "PO-02072023-001",
+            "serial_number": "SN-0004",
+            "pic": "Andi Setyawan",
+            "location": "Gedung A",
+            "sublocation": "Lantai 2",
+            "sub_sublocation": "Ruang A",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "22-07-2023",
+            "updated_by": "John Smith",
+            "tag": "20230806162445FFA-0004",
+            "acquisition_cost": "IDR 150.000"
+        }
+    ]
+}

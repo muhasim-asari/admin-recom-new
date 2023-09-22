@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "branch_name": "Grand Hotel Jakarta",
+      "phone_number": "021-12345678",
+      "email": "info@grandhoteljakarta.com",
+      "address": "Jl. Sudirman No. 123, Jakarta"
+    },
+    {
+      "id": 2,
+      "branch_name": "Bali Paradise Resort",
+      "phone_number": "0361-98765432",
+      "email": "info@baliparadiseresort.com",
+      "address": "Jl. Kuta Beach, Bali"
+    },
+    {
+      "id": 3,
+      "branch_name": "Yogyakarta Heritage Hotel",
+      "phone_number": "0274-555666",
+      "email": "info@yogyakartaheritagehotel.com",
+      "address": "Jl. Malioboro No. 789, Yogyakarta"
+    },
+    {
+      "id": 4,
+      "branch_name": "Bandung City View Hotel",
+      "phone_number": "022-4445555",
+      "email": "info@bandungcityviewhotel.com",
+      "address": "Jl. Dago No. 456, Bandung"
+    },
+    {
+      "id": 5,
+      "branch_name": "Surabaya Luxury Suites",
+      "phone_number": "031-7778888",
+      "email": "info@surabayaluxurysuites.com",
+      "address": "Jl. Embong Malang No. 222, Surabaya"
+    },
+    {
+      "id": 6,
+      "branch_name": "Makassar Seaside Resort",
+      "phone_number": "0411-999000",
+      "email": "info@makassarseasideresort.com",
+      "address": "Jl. Losari Beach, Makassar"
+    },
+    {
+      "id": 7,
+      "branch_name": "Medan Downtown Hotel",
+      "phone_number": "061-222333",
+      "email": "info@medandowntownhotel.com",
+      "address": "Jl. Ahmad Yani No. 333, Medan"
+    },
+    {
+      "id": 8,
+      "branch_name": "Semarang Riverside Inn",
+      "phone_number": "024-777666",
+      "email": "info@semarangriversideinn.com",
+      "address": "Jl. Pandanaran No. 555, Semarang"
+    },
+    {
+      "id": 9,
+      "branch_name": "Lombok Beachfront Resort",
+      "phone_number": "0370-888999",
+      "email": "info@lombokbeachfrontresort.com",
+      "address": "Jl. Senggigi Beach, Lombok"
+    },
+    {
+      "id": 10,
+      "branch_name": "Palembang City Hotel",
+      "phone_number": "0711-333444",
+      "email": "info@palembangcityhotel.com",
+      "address": "Jl. Veteran No. 111, Palembang"
+    }
+  ]
+}

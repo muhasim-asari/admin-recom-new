@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "department_name": "Department A",
+      "division_name": "Division 1",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "status": "Active",
+      "employee_name": "John Doe",
+      "phone_number": "123-456-7890",
+      "address": "123 Main Street",
+      "email": "john.doe@example.com",
+      "job_title": "Manager",
+      "po_number": "PO1234",
+      "po_date": "01-Jun-2023",
+      "po_status": "Active",
+      "asset_count": {
+        "total": 10,
+        "tags": 8,
+        "wo_tags": 2
+      },
+      "asset_value": 10000000
+    },
+    {
+      "id": 2,
+      "department_name": "Department B",
+      "division_name": "Division 2",
+      "information": "Nulla facilisi. Sed eget leo dapibus, condimentum nunc ut, fringilla ex.",
+      "status": "Inactive",
+      "employee_name": "Jane Smith",
+      "phone_number": "987-654-3210",
+      "address": "456 Elm Street",
+      "email": "jane.smith@example.com",
+      "job_title": "Supervisor",
+      "po_number": "PO5678",
+      "po_date": "15-Jun-2023",
+      "po_status": "Inactive",
+      "asset_count": {
+        "total": 5,
+        "tags": 3,
+        "wo_tags": 2
+      },
+      "asset_value": 5000000
+    },
+    {
+      "id": 3,
+      "department_name": "Department C",
+      "division_name": "Division 1",
+      "information": "Fusce suscipit elit eget tristique pulvinar.",
+      "status": "Active",
+      "employee_name": "David Johnson",
+      "phone_number": "555-123-4567",
+      "address": "789 Oak Street",
+      "email": "david.johnson@example.com",
+      "job_title": "Analyst",
+      "po_number": "PO9012",
+      "po_date": "10-Jun-2023",
+      "po_status": "Active",
+      "asset_count": {
+        "total": 15,
+        "tags": 12,
+        "wo_tags": 3
+      },
+      "asset_value": 7500000
+    },
+    {
+      "id": 4,
+      "department_name": "Department D",
+      "division_name": "Division 3",
+      "information": "Etiam pharetra erat non turpis mattis, sit amet malesuada lectus accumsan.",
+      "status": "Active",
+      "employee_name": "Amy Lee",
+      "phone_number": "789-456-1230",
+      "address": "987 Pine Street",
+      "email": "amy.lee@example.com",
+      "job_title": "Engineer",
+      "po_number": "PO3456",
+      "po_date": "05-Jun-2023",
+      "po_status": "Inactive",
+      "asset_count": {
+        "total": 8,
+        "tags": 5,
+        "wo_tags": 3
+      },
+      "asset_value": 25000000
+    },
+    {
+      "id": 5,
+      "department_name": "Department E",
+      "division_name": "Division 2",
+      "information": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut efficitur felis a ipsum cursus interdum.",
+      "status": "Active",
+      "employee_name": "Mark Davis",
+      "phone_number": "123-987-6543",
+      "address": "654 Maple Street",
+      "email": "mark.davis@example.com",
+      "job_title": "Coordinator",
+      "po_number": "PO7890",
+      "po_date": "20-Jun-2023",
+      "po_status": "Active",
+      "asset_count": {
+        "total": 3,
+        "tags": 2,
+        "wo_tags": 1
+      },
+      "asset_value": 15000000
+    }
+  ]
+}

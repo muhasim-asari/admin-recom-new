@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "asset_category_name": "Furniture",
+            "description": "Wooden desk and chair set",
+            "status": "Active",
+            "asset_group_name": "Office Furniture",
+            "total": 0,
+            "tags": 0,
+            "wo_tags": 0,
+            "physical_check": 0,
+            "repair": 0,
+            "asset_out": 0,
+            "disposal": 0,
+            "available": 0
+        },
+        {
+            "id": 2,
+            "asset_category_name": "Electronics",
+            "description": "Smart TV with 4K resolution",
+            "status": "Active",
+            "asset_group_name": "Entertainment Electronics",
+            "total": 0,
+            "tags": 0,
+            "wo_tags": 0,
+            "physical_check": 0,
+            "repair": 0,
+            "asset_out": 0,
+            "disposal": 0,
+            "available": 0
+        },
+        {
+            "id": 3,
+            "asset_category_name": "Vehicles",
+            "description": "Sedan car, black color",
+            "status": "Inactive",
+            "asset_group_name": "Automobile",
+            "total": 0,
+            "tags": 0,
+            "wo_tags": 0,
+            "physical_check": 0,
+            "repair": 0,
+            "asset_out": 0,
+            "disposal": 0,
+            "available": 0
+        },
+        {
+            "id": 4,
+            "asset_category_name": "Tools",
+            "description": "Power drill set with various attachments",
+            "status": "Inactive",
+            "asset_group_name": "Power Tools",
+            "total": 0,
+            "tags": 0,
+            "wo_tags": 0,
+            "physical_check": 0,
+            "repair": 0,
+            "asset_out": 0,
+            "disposal": 0,
+            "available": 0
+        }
+    ]
+}

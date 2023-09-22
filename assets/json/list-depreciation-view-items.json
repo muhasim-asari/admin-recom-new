@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "item_number": "IN-20230920-A001",
+      "po_number": "PO-20092023-001",
+      "serial_number": "SN-0001",
+      "depreciation_start_date": "20-September-2023",
+      "acquisition_cost_usd": "USD 16,24",
+      "acquisition_cost_idr": "IDR 2250.000",
+      "net_book_value_usd": "USD 14,77",
+      "net_book_value_idr": "IDR 2227.272,73"
+    },
+    {
+      "item_number": "IN-20230921-A002",
+      "po_number": "PO-21092023-002",
+      "serial_number": "SN-0002",
+      "depreciation_start_date": "21-September-2023",
+      "acquisition_cost_usd": "USD 16,24",
+      "acquisition_cost_idr": "IDR 250.000",
+      "net_book_value_usd": "USD 14,77",
+      "net_book_value_idr": "IDR 227.272,73"
+    },
+    {
+      "item_number": "IN-20230922-A003",
+      "po_number": "PO-22092023-003",
+      "serial_number": "SN-0003",
+      "depreciation_start_date": "22-August-2023",
+      "acquisition_cost_usd": "USD 16,24",
+      "acquisition_cost_idr": "IDR 2250.000",
+      "net_book_value_usd": "USD 14,77",
+      "net_book_value_idr": "IDR 2227.272,73"
+    },
+    {
+      "item_number": "IN-20230923-A004",
+      "po_number": "PO-23092023-004",
+      "serial_number": "SN-0004",
+      "depreciation_start_date": "23-August-2023",
+      "acquisition_cost_usd": "USD 16,24",
+      "acquisition_cost_idr": "IDR 2250.000",
+      "net_book_value_usd": "USD 14,77",
+      "net_book_value_idr": "IDR 2227.272,73"
+    }
+  ]
+}

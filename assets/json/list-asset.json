@@ -1,0 +1,107 @@
+{
+    "data": [
+        {
+            "id": 3,
+            "asset_code": "15-25-33-44-88-76-888-01",
+            "asset_name": "Uwitan - Meja Konsol 1 Laci",
+            "asset_category": "Furniture",
+            "asset_group": "Furniture",
+            "depreciation_start_date": "01-Apr-2023",
+            "location": "Main Building",
+            "sublocation": "Conference Room",
+            "sub_sublocation": "North Wing",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "22-07-2023",
+            "updated_by": "John Smith",
+            "tags": [
+                "meeting",
+                "table"
+            ],
+            "required": 7,
+            "quantity": 20
+        },
+        {
+            "id": 1,
+            "asset_code": "11-22-33-44-55-66-123-01",
+            "asset_name": "Ergotec Kursi Kantor LX 930 TR",
+            "asset_category": "Furniture",
+            "asset_group": "Furniture",
+            "depreciation_start_date": "01-May-2023",
+            "location": "Main Building",
+            "sublocation": "Conference Room",
+            "sub_sublocation": "",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "25-07-2023",
+            "updated_by": "Jane Doe",
+            "tags": [
+                "chair"
+            ],
+            "required": 6,
+            "quantity": 100
+        },
+        {
+            "id": 5,
+            "asset_code": "11-22-33-44-55-66-234-01",
+            "asset_name": "AXIO PC All in One MYPC U23",
+            "asset_category": "Electronics",
+            "asset_group": "IT Hardware & Software",
+            "depreciation_start_date": "01-Jun-2023",
+            "location": "Main Building",
+            "sublocation": "Entrance",
+            "sub_sublocation": "Lobby",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "25-07-2023",
+            "updated_by": "David Johnson",
+            "tags": [
+                "hardware",
+                "Computer"
+            ],
+            "required": 5,
+            "quantity": 25
+        },
+        {
+            "id": 4,
+            "asset_code": "11-22-33-44-55-66-234-02",
+            "asset_name": "Lemari Arsip SDG-06",
+            "asset_category": "Furniture",
+            "asset_group": "Furniture",
+            "depreciation_start_date": "01-Jul-2023",
+            "location": "Factory",
+            "sublocation": "Production Area",
+            "sub_sublocation": "Assembly Line 1",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "25-07-2023",
+            "updated_by": "Amy Lee",
+            "tags": [
+                "arsip",
+                "lemari"
+            ],
+            "required": 9,
+            "quantity": 10
+        },
+        {
+            "id": 2,
+            "asset_code": "11-22-33-44-55-66-123-02",
+            "asset_name": "Iphone 11 Hitam",
+            "asset_category": "Electronics",
+            "asset_group": "Electronics",
+            "depreciation_start_date": "01-Aug-2023",
+            "location": "Main Building",
+            "sublocation": "Office Area",
+            "sub_sublocation": "South Wing",
+            "created_date": "25-07-2023",
+            "created_by": "Admin",
+            "updated_date": "25-07-2023",
+            "updated_by": "Mark Davis",
+            "tags": [
+                "handphone"
+            ],
+            "required": 3,
+            "quantity": 2
+        }
+    ]
+}

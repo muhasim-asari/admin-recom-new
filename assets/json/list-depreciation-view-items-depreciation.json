@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "period": "JAN 2024",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "136.363,65"
+    },
+    {
+      "id": "2",
+      "period": "FEB 2024",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "113.636,38"
+    },
+    {
+      "id": "3",
+      "period": "MAR 2024",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "90.909,11"
+    },
+    {
+      "id": "4",
+      "period": "APR 2024",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "68.181,84"
+    },
+    {
+      "id": "5",
+      "period": "MAY 2024",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "45.454,57"
+    },
+    {
+      "id": "6",
+      "period": "JUN 2024",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "42.800,32"
+    },
+    {
+      "id": "7",
+      "period": "JUL 2024",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "36.600,12"
+    },
+    {
+      "id": "8",
+      "period": "AUG 2023",
+      "acquisition_cost": "IDR 250.000",
+      "depreciation_value": "IDR 0",
+      "net_book_value": "250.000"
+    },
+    {
+      "id": "9",
+      "period": "SEP 2023",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "227.272,73"
+    },
+    {
+      "id": "10",
+      "period": "OKT 2023",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "204.545,46"
+    },
+    {
+      "id": "11",
+      "period": "NOV 2023",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "181.818,19"
+    },
+    {
+      "id": "12",
+      "period": "DES 2023",
+      "acquisition_cost": null,
+      "depreciation_value": "IDR 22.727,27",
+      "net_book_value": "159.090,92"
+    }
+  ]
+}

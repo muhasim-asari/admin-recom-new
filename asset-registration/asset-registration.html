@@ -1,0 +1,2103 @@
+﻿<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Asset Registration - Admin Recom</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/favicon/favicon.ico"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/fonts/materialdesignicons.css"
+    />
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/rtl/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/rtl/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/node-waves/node-waves.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css"
+    />
+    <link rel='stylesheet' href='../assets/vendor/libs/select2/select2.css' />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/flatpickr/flatpickr.css"
+    />
+    <link rel="stylesheet" href="../assets/vendor/libs/dropzone/dropzone.css" />
+
+    <!-- Toastr -->
+    <link rel="stylesheet" href="../assets/vendor/libs/toastr/toastr.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/animate-css/animate.css"
+    />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/core-theme.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <script src="../assets/vendor/js/template-customizer.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo">
+            <a href="javascript:void(0);" class="app-brand-link">
+              <span class="app-brand-text demo menu-text fw-bold ms-2"
+                >Admin Dashboard</span
+              >
+            </a>
+
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewbox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.4854 4.88844C11.0081 4.41121 10.2344 4.41121 9.75715 4.88844L4.51028 10.1353C4.03297 10.6126 4.03297 11.3865 4.51028 11.8638L9.75715 17.1107C10.2344 17.5879 11.0081 17.5879 11.4854 17.1107C11.9626 16.6334 11.9626 15.8597 11.4854 15.3824L7.96672 11.8638C7.48942 11.3865 7.48942 10.6126 7.96672 10.1353L11.4854 6.61667C11.9626 6.13943 11.9626 5.36568 11.4854 4.88844Z"
+                  fill="currentColor"
+                  fill-opacity="0.6"
+                ></path>
+                <path
+                  d="M15.8683 4.88844L10.6214 10.1353C10.1441 10.6126 10.1441 11.3865 10.6214 11.8638L15.8683 17.1107C16.3455 17.5879 17.1192 17.5879 17.5965 17.1107C18.0737 16.6334 18.0737 15.8597 17.5965 15.3824L14.0778 11.8638C13.6005 11.3865 13.6005 10.6126 14.0778 10.1353L17.5965 6.61667C18.0737 6.13943 18.0737 5.36568 17.5965 4.88844C17.1192 4.41121 16.3455 4.41121 15.8683 4.88844Z"
+                  fill="currentColor"
+                  fill-opacity="0.38"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboards -->
+            <li class="menu-item">
+              <a href="../dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
+                <div data-i18n="Dashboards">Dashboards</div>
+              </a>
+            </li>
+
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Admin Super</span>
+            </li>
+            <li class="menu-item">
+              <a href="../master/master-data-group.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-account-group-outline"></i>
+                <div data-i18n="Group">Group</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="../master/master-data-company.html" class="menu-link">
+                <i
+                  class="menu-icon tf-icons mdi mdi-office-building-outline"
+                ></i>
+                <div data-i18n="Company">Company</div>
+              </a>
+            </li>
+
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Admin Company</span>
+            </li>
+            <li class="menu-item">
+              <a href="../master/master-data-branch.html" class="menu-link">
+                <i
+                  class="menu-icon tf-icons mdi mdi-office-building-outline"
+                ></i>
+                <div data-i18n="Branch">Branch</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="../master/master-data-currency.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-cash-multiple"></i>
+                <div data-i18n="Currency">Currency</div>
+              </a>
+            </li>
+
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Master Data</span>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons mdi mdi-database-outline"></i>
+                <div data-i18n="Asset">Asset</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a
+                    href="../master/master-data-asset-category.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Asset Category">Asset Category</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="../master/master-data-asset-group.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Asset Group">Asset Group</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="../master/master-data-location.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Location">Location</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="../master/master-data-supplier.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Supplier">Supplier</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="../master/master-data-unit-of-measurement.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Unit of Measurement">
+                      Unit of Measurement
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="../master/master-data-division.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-account-check-outline"></i>
+                <div data-i18n="Division">Division</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="../master/master-data-department.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-briefcase-outline"></i>
+                <div data-i18n="Department">Department</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="../master/master-data-employee.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+                <div data-i18n="Employee">Employee</div>
+              </a>
+            </li>
+
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Purchase Order</span>
+            </li>
+            <li class="menu-item">
+              <a href="../po-data/po-data.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+                <div data-i18n="PO Data">PO Data</div>
+              </a>
+            </li>
+
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Asset Management</span>
+            </li>
+            <li class="menu-item active">
+              <a href="./asset-registration.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-folder-open-outline"></i>
+                <div data-i18n="Asset Registration">Asset Registration</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="../asset-list/asset-list.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-list-box-outline"></i>
+                <div data-i18n="Asset List">Asset List</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="../asset-depreciation/asset-depreciation.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-chart-line-variant"></i>
+                <div data-i18n="Asset Depreciation">Asset Depreciation</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-chart-line"></i>
+                <div data-i18n="Depreciation N/A">Depreciation N/A</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-tag-outline"></i>
+                <div data-i18n="Asset W/O Tags">Asset W/O Tags</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons mdi mdi-filter-outline"></i>
+                <div data-i18n="Asset Filter By">Asset Filter By</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a
+                    href="../admin-management/admin-management-filter-by-asset-category.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Asset Category">Asset Category</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="../admin-management/admin-management-filter-by-location.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Location">Location</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="../admin-management/admin-management-filter-by-supplier.html"
+                    class="menu-link"
+                  >
+                    <div data-i18n="Supplier">Supplier</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Asset Lifecycle</span>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-file-multiple-outline"></i>
+                <div data-i18n="Asset Audit Data">Asset Audit Data</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i
+                  class="menu-icon tf-icons mdi mdi-file-arrow-left-right-outline"
+                ></i>
+                <div data-i18n="Asset Moving Data">Asset Moving Data</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-file-import-outline"></i>
+                <div data-i18n="Asset In">Asset In</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-file-export-outline"></i>
+                <div data-i18n="Asset Out">Asset Out</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-minus-circle-outline"></i>
+                <div data-i18n="Asset Disposal Data">Asset Disposal Data</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-cog-outline"></i>
+                <div data-i18n="Asset Repair">Asset Repair</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons mdi mdi-wrench-clock-outline"></i>
+                <div data-i18n="Periodic Maintenance">Periodic Maintenance</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Maintenance Group">Maintenance Group</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Asset Maintenance">Asset Maintenance</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Report -->
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Report</span>
+            </li>
+            <li class="menu-item">
+              <a
+                href="#"
+                class="menu-link"
+              >
+                <i class="menu-icon tf-icons mdi mdi-file-chart-outline"></i>
+                <div data-i18n="Depreciation Report">Depreciation Report</div>
+              </a>
+            </li>
+
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Approval Data</span>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+                <div data-i18n="Asset Audit">Asset Audit</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-swap-horizontal"></i>
+                <div data-i18n="Asset Moving">Asset Moving</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i
+                  class="menu-icon tf-icons mdi mdi-file-arrow-up-down-outline"
+                ></i>
+                <div data-i18n="Asset In/Out">Asset In/Out</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Asset In">Asset In</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Asset Out">Asset Out</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-minus-circle-outline"></i>
+                <div data-i18n="Asset Disposal">Asset Disposal</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons mdi mdi-cog-outline"></i>
+                <div data-i18n="Asset Repair/ Maintenance">
+                  Asset Repair/ Maintenance
+                </div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Asset Repair">Asset Repair</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Asset Maintenance">Asset Maintenance</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar-fixed"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="mdi mdi-menu mdi-24px"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="../assets/img/avatars/1.png"
+                        alt=""
+                        class="w-px-40 h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img
+                                src="../assets/img/avatars/1.png"
+                                alt=""
+                                class="w-px-40 h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../index.html"
+                        target="_blank"
+                      >
+                        <i class="mdi mdi-logout me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4">
+                <span class="text-muted fw-bold"
+                  ><a href="./asset-registration.html"
+                    >Asset Registration</a
+                  ></span
+                >
+              </h4>
+
+              <div class="row g-4">
+
+                <!-- Purchase Information -->
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header pb-2">
+                      <h5 class="mb-0">Purchase Information</h5>
+                    </div>
+                    <div class="card-body">
+                      <!-- Available -->
+                      <div class="form-check form-check-inline mt-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="available"
+                          value="1"
+                          checked
+                        />
+                        <label class="form-check-label" for="available"
+                          >Available</label
+                        >
+                      </div>
+
+                      <!-- Not Available -->
+                      <div class="form-check form-check-inline mb-4">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="notAvailable"
+                          value="0"
+                        />
+                        <label class="form-check-label" for="notAvailable"
+                          >Not Available</label
+                        >
+                      </div>
+
+                      <div id="poWarrantyForm" class="row g-4">
+                        <!-- PO Number -->
+                        <div class="col-md-6">
+                          <div class="form-floating form-floating-outline mb-4">
+                            <select
+                              class="form-select select2 form-control-lg"
+                              id="poNumber"
+                              aria-label="po-number"
+                            >
+                              <option>Choose PO Number</option>
+                            </select>
+                            <label for="poNumber"
+                              >PO Number
+                              <span class="text-danger">*</span></label
+                            >
+                          </div>
+                        </div>
+
+                        <!-- Warranty Date -->
+                        <div class="col-md-6">
+                          <div class="input-group input-group-merge">
+                            <div class="form-floating form-floating-outline">
+                              <input
+                                type="text"
+                                class="form-control flatpickr-input active"
+                                placeholder="DD--MM-YYYY"
+                                id="warrantyDate"
+                                value=""
+                                readonly="readonly"
+                              />
+                              <label for="warrantyDate">Warranty Date</label>
+                            </div>
+                            <span class="input-group-text cursor-pointer"
+                              ><i class="mdi mdi-calendar-month-outline"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- General Information -->
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="mb-0">General Information</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row g-4">
+                        <!-- Left -->
+                        <div class="col-md-6">
+                          <div class="row g-4">
+                            <!-- Asset Name -->
+                            <div class="col-md-12">
+                              <div class="form-floating form-floating-outline">
+                                <input
+                                  type="text"
+                                  id="assetName"
+                                  class="form-control"
+                                  placeholder="Computer"
+                                  value=""
+                                />
+                                <label for="assetName"
+                                  >Asset Name
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
+                            </div>
+
+                            <!-- Asset Category -->
+                            <div class="col-md-12">
+                              <div class="form-floating form-floating-outline">
+                                <select
+                                  class="form-select"
+                                  id="assetCatName"
+                                  aria-label="Asset Category Name"
+                                >
+                                  <option selected="">
+                                    Choose Asset Category
+                                  </option>
+                                </select>
+                                <label for="assetCatName"
+                                  >Asset Category
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
+                            </div>
+
+                            <!-- Asset Group -->
+                            <div class="col-md-12">
+                              <div class="form-floating form-floating-outline">
+                                <select
+                                  class="form-select"
+                                  id="assetCatGroup"
+                                  aria-label="Asset Category Group"
+                                >
+                                  <option selected="">
+                                    Choose Asset Group
+                                  </option>
+                                </select>
+                                <label for="assetCatGroup"
+                                  >Asset Group
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
+                            </div>
+
+                            <!-- Asset Code -->
+                            <div class="col-md-12">
+                              <div class="row g-3">
+                                <div class="col-sm-9">
+                                  <div
+                                    class="form-floating form-floating-outline"
+                                  >
+                                    <input
+                                      type="text"
+                                      id="assetCode"
+                                      class="form-control"
+                                      placeholder="11-22-33-44-55-66-777-01"
+                                      value=""
+                                    />
+                                    <label for="assetCode"
+                                      >Asset Code
+                                      <span class="text-danger">*</span></label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <button
+                                    type="button"
+                                    class="h-100 w-100 btn btn-primary"
+                                  >
+                                    Generate
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="col-md-6">
+                          <div class="row g-4">
+                            <!-- Description -->
+                            <div class="col-md-12">
+                              <div class="form-floating form-floating-outline">
+                                <textarea
+                                  class="form-control h-px-120"
+                                  id="description"
+                                  placeholder="Add Note Here ..."
+                                ></textarea>
+                                <label for="description">Description</label>
+                              </div>
+                            </div>
+
+                            <!-- Asset Type -->
+                            <div class="col-md-12">
+                              <div
+                                class="form-floating form-floating-outline mb-3"
+                              >
+                                <select
+                                  class="form-select"
+                                  id="assetType"
+                                  aria-label="assetUom"
+                                >
+                                  <option value="Single Item">
+                                    Single Item
+                                  </option>
+                                  <option value="Set Items">Set Items</option>
+                                </select>
+                                <label for="assetType">Asset Type </label>
+                              </div>
+
+                              <!-- Sub Item -->
+                              <div id="formSetItems" class="form-repeater ps-3">
+                                <div data-repeater-list="group-a">
+                                  <div data-repeater-item="">
+                                    <div class="row">
+                                      <div
+                                        class="mb-3 col-lg-10 col-xl-10 col-12 mb-0"
+                                      >
+                                        <input
+                                          id="subItemNumber1"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value=""
+                                        />
+                                      </div>
+                                      <div
+                                        class="mb-3 col-lg-2 col-xl-2 col-12 d-flex align-items-center mb-0"
+                                      >
+                                        <button
+                                          class="btn btn-outline-danger"
+                                          data-repeater-delete=""
+                                          id="deleteForm"
+                                        >
+                                          <i
+                                            class="mdi mdi-trash-can-outline mdi-22px"
+                                          ></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="mb-0">
+                                  <button
+                                    class="btn text-primary text-capitalize ps-0"
+                                    data-repeater-create=""
+                                    id="addForm"
+                                  >
+                                    <i class="mdi mdi-plus me-1"></i>
+                                    <span class="align-middle"
+                                      >Add Sub Item</span
+                                    >
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="border-2 mb-2">
+                        <!-- File Attachment -->
+                        <div class="col-md-12 mt-3">
+                          <h5>File Attachment</h5>
+
+                          <div class="d-flex gap-3 mt-3">
+                            <div class="col-md-2">
+                              <div
+                                action="/upload"
+                                class="dropzone needsclick dz-clickable"
+                                id="uploadImage"
+                              >
+                                <div class="dz-message needsclick my-2">
+                                  <label class="fs-5 mb-0">
+                                    Drop files here or click to upload
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="col-md-2 border-2 position-relative border rounded-3 d-flex align-items-center">
+                              <button
+                                class="btn btn-remove text-danger position-absolute p-0"
+                              >
+                                <span
+                                  class="mdi mdi-trash-can-outline mdi-24px"
+                                ></span>
+                              </button>
+                              <img
+                                class="w-100 image-thumbnail rounded-2 p-1"
+                                src="https://lagomhomestore.com/cdn/shop/products/kursi-santai-unik-bahan-kayu-jati-solid-chair-lagom-home-store-teak-furniture-boutique-jati-furnitur-jakarta-33028852220140.jpg?v=1686036854&width=700"
+                                alt=""
+                                width="140"
+                                height="145"
+                              />
+                            </div>
+    
+                            <div class="col-md-2 border-2 position-relative border rounded-3 d-flex align-items-center">
+                              <button
+                                class="btn btn-remove text-danger position-absolute p-0"
+                              >
+                                <span
+                                  class="mdi mdi-trash-can-outline mdi-24px"
+                                ></span>
+                              </button>
+                              <img
+                                class="w-100 image-thumbnail rounded-2 p-1"
+                                src="https://uwitan.id/wp-content/uploads/2018/06/1.-Furniture-Kursi-Classic-Chair-Natural.jpeg"
+                                alt=""
+                                width="140"
+                                height="145"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PIC & Asset Location -->
+                <div class="col-md-12">
+                  <div class="row g-4">
+                    <!-- PIC -->
+                    <div class="col-md-6">
+                      <div class="card h-100">
+                        <div class="card-header">
+                          <h5 class="mb-0">Person In Charge (PIC)</h5>
+                        </div>
+                        <div class="card-body">
+                          <!-- Department -->
+                          <div class="form-floating form-floating-outline mb-4">
+                            <select
+                              class="form-select"
+                              id="department"
+                              aria-label="Department"
+                            >
+                              <option selected="">Choose Department</option>
+                            </select>
+                            <label for="department">Department</label>
+                          </div>
+
+                          <!-- Division -->
+                          <div class="form-floating form-floating-outline mb-4">
+                            <select
+                              class="form-select"
+                              id="division"
+                              aria-label="Division"
+                            >
+                              <option selected="">Choose Division</option>
+                            </select>
+                            <label for="division">Division</label>
+                          </div>
+
+                          <!-- Employee -->
+                          <div class="form-floating form-floating-outline mb-4">
+                            <select
+                              class="form-select"
+                              id="employee"
+                              aria-label="Employee"
+                            >
+                              <option selected="">Choose Employee</option>
+                            </select>
+                            <label for="employee">Employee</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Asset Location -->
+                    <div class="col-md-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <h5 class="mb-0">Asset Location</h5>
+                        </div>
+                        <div class="card-body">
+                          <!-- Location -->
+                          <div class="form-floating form-floating-outline mb-4">
+                            <select
+                              class="form-select"
+                              id="locationName"
+                              aria-label="location"
+                            >
+                              <option>Choose Location</option>
+                            </select>
+                            <label for="locationName"
+                              >Location
+                              <span class="text-danger">*</span></label
+                            >
+                          </div>
+
+                          <!-- Sub Location -->
+                          <div
+                            id="formSubLocation"
+                            class="form-floating form-floating-outline mb-4"
+                            style="display: none;"
+                          >
+                            <select
+                              class="form-select"
+                              id="subLocation"
+                              aria-label="sub location"
+                            >
+                              <option value="Choose Sub Location">
+                                Choose Sub Location
+                              </option>
+                            </select>
+                            <label for="subLocation">Sub Location</label>
+                          </div>
+
+                          <!-- Sub Sub Location -->
+                          <div
+                            id="formSubSubLocation"
+                            class="form-floating form-floating-outline mb-4"
+                            style="display: none;"
+                          >
+                            <select
+                              class="form-select"
+                              id="subSubLocation"
+                              aria-label="sub location"
+                            >
+                              <option>
+                                Choose Sub-Sub Location
+                              </option>
+                            </select>
+                            <label for="subSubLocation">Sub-Sub Location</label>
+                          </div>
+
+                          <!-- Remarks -->
+                          <div class="form-floating form-floating-outline">
+                            <input
+                              type="text"
+                              id="reMarks"
+                              class="form-control"
+                              placeholder="Near Office Table"
+                              value=""
+                            />
+                            <label for="reMarks">Remarks</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Data Items -->
+                <div class="col-md-12">
+                  <h4 class="mb-0">Data Items</h4>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row g-4">
+
+                        <!-- Quantity -->
+                        <div class="col-md-6">
+                          <div class="form-floating form-floating-outline">
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="112233"
+                              id="quantity"
+                              value=""
+                            />
+                            <label for="quantity"
+                              >Quantity
+                              <span class="text-danger">*</span></label
+                            >
+                          </div>
+                        </div>
+
+                        <!-- Received Date -->
+                        <div class="col-md-6">
+                          <div class="input-group input-group-merge">
+                            <div class="form-floating form-floating-outline">
+                              <input
+                                type="text"
+                                class="form-control flatpickr-input active"
+                                placeholder="DD-MMM-YYYY"
+                                id="assetReceiveDate"
+                                readonly="readonly"
+                              />
+                              <label for="assetReceiveDate"
+                                >Received Date</label
+                              >
+                            </div>
+                            <span class="input-group-text cursor-pointer"
+                              ><i class="mdi mdi-calendar-month-outline"></i
+                            ></span>
+                          </div>
+                        </div>
+
+                        <!-- Unit Of Measurement -->
+                        <div class="col-md-6">
+                          <div class="form-floating form-floating-outline">
+                            <select
+                              class="form-select"
+                              id="assetUom"
+                              aria-label="assetUom"
+                            >
+                              <option selected="">
+                                Choose Unit of Measurement
+                              </option>
+                            </select>
+                            <label for="assetUom"
+                              >Asset Unit of Measurement
+                              <span class="text-danger">*</span></label
+                            >
+                          </div>
+                        </div>
+
+                        <!-- Use Start Date -->
+                        <div class="col-md-6">
+                          <div class="input-group input-group-merge">
+                            <div class="form-floating form-floating-outline">
+                              <input
+                                type="text"
+                                class="form-control flatpickr-input active"
+                                placeholder="DD-MMM-YYYY"
+                                id="assetUsedStartDate"
+                                readonly="readonly"
+                              />
+                              <label for="assetUsedStartDate"
+                                >Used Start Date</label
+                              >
+                            </div>
+                            <span class="input-group-text cursor-pointer"
+                              ><i class="mdi mdi-calendar-month-outline"></i
+                            ></span>
+                          </div>
+                        </div>
+
+                        <!-- Currency & Rate -->
+                        <div class="col-md-6">
+                          <h5>Currency & Rate</h5>
+
+                          <div class="row g-3">
+                            <!-- Currency -->
+                            <div class="col-md-5">
+                              <div class="form-floating form-floating-outline">
+                                <select
+                                  class="form-select"
+                                  id="oriCurrency"
+                                  aria-label="Originated Currency"
+                                >
+                                  <option selected="">Choose Currency</option>
+                                </select>
+                                <label for="oriCurrency"
+                                  >Currency
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
+                            </div>
+
+                            <!-- Rate -->
+                            <div class="col-md-7">
+                              <div class="form-floating form-floating-outline">
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  id="currencyRate"
+                                  placeholder="15000"
+                                  value=""
+                                  aria-label="15000"
+                                  aria-describedby="currencyRate"
+                                />
+                                <label for="currencyRate"
+                                  >Rate
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Item Number & Serial Number -->
+                        <div class="col-md-12">
+                          <h5 class="mb-0">Item Number & Serial Number</h5>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div id="singleItem" class="mt-0">
+                          <div class="col-md-12 pt-3">
+                            <!-- Header -->
+                            <div
+                              class="header d-flex gap-2 mt-2 mb-3 px-3 py-2"
+                            >
+                              <div class="col-md-3 text-uppercase text-header">
+                                Item Number
+                              </div>
+                              <div class="col-md-3 text-uppercase text-header">
+                                Serial Number
+                              </div>
+                              <div class="col-md-6 text-uppercase text-header">
+                                Price
+                              </div>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="body row gap-3 py-2">
+                              <!-- Item 1 -->
+                              <div class="col-md-12">
+                                <div class="d-flex gap-2 pe-3">
+                                  <!-- Item Number -->
+                                  <div class="col-md-3">
+                                    <div
+                                      class="form-floating form-floating-outline"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="112233"
+                                        id="itemNumber1"
+                                        value=""
+                                      />
+                                      <label for="itemNumber1"
+                                        >Item Number 1</label
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <!-- Serial Number -->
+                                  <div class="col-md-3">
+                                    <div
+                                      class="form-floating form-floating-outline"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="112233"
+                                        id="serialNumber1"
+                                        value=""
+                                      />
+                                      <label for="serialNumber1"
+                                        >Serial Number 1</label
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <!-- Price -->
+                                  <div class="col-md-6">
+                                    <div class="row g-2">
+                                      <div class="col-md-6">
+                                        <div
+                                          class="input-group input-group-merge"
+                                        >
+                                          <span class="input-group-text border-custom-merge"
+                                            >USD</span
+                                          >
+                                          <div
+                                            class="form-floating form-floating-outline"
+                                          >
+                                            <input
+                                              type="number"
+                                              class="form-control"
+                                              id="assetPriceUnit"
+                                              placeholder="15000"
+                                              value=""
+                                              aria-label="15000"
+                                              aria-describedby="assetPriceUnit"
+                                            />
+                                            <label for="assetPriceUnit"
+                                              >Price
+                                              <span class="text-danger"
+                                                >*</span
+                                              ></label
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <input
+                                          id="idrCurrency"
+                                          class="form-control form-control-lg h-100"
+                                          type="text"
+                                          placeholder="1212"
+                                          value="0"
+                                          disabled
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Item 2 -->
+                              <div class="col-md-12">
+                                <div class="d-flex gap-2 pe-3">
+                                  <!-- Item Number -->
+                                  <div class="col-md-3">
+                                    <div
+                                      class="form-floating form-floating-outline"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="112233"
+                                        id="itemNumber2"
+                                        value=""
+                                      />
+                                      <label for="itemNumber2"
+                                        >Item Number 2</label
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <!-- Serial Number -->
+                                  <div class="col-md-3">
+                                    <div
+                                      class="form-floating form-floating-outline"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="112233"
+                                        id="serialNumber2"
+                                        value=""
+                                      />
+                                      <label for="serialNumber2"
+                                        >Serial Number 2</label
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <!-- Price -->
+                                  <div class="col-md-6">
+                                    <div class="row g-2">
+                                      <div class="col-md-6">
+                                        <div
+                                          class="input-group input-group-merge"
+                                        >
+                                          <span class="input-group-text border-custom-merge"
+                                            >USD</span
+                                          >
+                                          <div
+                                            class="form-floating form-floating-outline"
+                                          >
+                                            <input
+                                              type="number"
+                                              class="form-control"
+                                              id="assetPriceUnit"
+                                              placeholder="15000"
+                                              value=""
+                                              aria-label="15000"
+                                              aria-describedby="assetPriceUnit"
+                                            />
+                                            <label for="assetPriceUnit"
+                                              >Price
+                                              <span class="text-danger"
+                                                >*</span
+                                              ></label
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <input
+                                          id="idrCurrency"
+                                          class="form-control form-control-lg h-100"
+                                          type="text"
+                                          placeholder="1212"
+                                          value="0"
+                                          disabled
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Item 3 -->
+                              <div class="col-md-12">
+                                <div class="d-flex gap-2 pe-3">
+                                  <!-- Item Number -->
+                                  <div class="col-md-3">
+                                    <div
+                                      class="form-floating form-floating-outline"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="112233"
+                                        id="itemNumber3"
+                                        value=""
+                                      />
+                                      <label for="itemNumber3"
+                                        >Item Number 3</label
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <!-- Serial Number -->
+                                  <div class="col-md-3">
+                                    <div
+                                      class="form-floating form-floating-outline"
+                                    >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="112233"
+                                        id="serialNumber3"
+                                        value=""
+                                      />
+                                      <label for="serialNumber3"
+                                        >Serial Number 3</label
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <!-- Price -->
+                                  <div class="col-md-6">
+                                    <div class="row g-2">
+                                      <div class="col-md-6">
+                                        <div
+                                          class="input-group input-group-merge"
+                                        >
+                                          <span class="input-group-text border-custom-merge"
+                                            >USD</span
+                                          >
+                                          <div
+                                            class="form-floating form-floating-outline"
+                                          >
+                                            <input
+                                              type="number"
+                                              class="form-control"
+                                              id="assetPriceUnit"
+                                              placeholder="15000"
+                                              value=""
+                                              aria-label="15000"
+                                              aria-describedby="assetPriceUnit"
+                                            />
+                                            <label for="assetPriceUnit"
+                                              >Price
+                                              <span class="text-danger"
+                                                >*</span
+                                              ></label
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <input
+                                          id="idrCurrency"
+                                          class="form-control form-control-lg h-100"
+                                          type="text"
+                                          placeholder="1212"
+                                          value="0"
+                                          disabled
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="mt-3 text-end">
+                              <div class="d-flex gap-2 pe-3">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-5"></div>
+                                <div class="col-md-4">
+                                  <div class="row">
+                                    <div class="col text-start">
+                                      Total Price (USD):
+                                    </div>
+                                    <div class="col text-primary fw-bold">
+                                      10.000
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col text-start">
+                                      Total Price (IDR):
+                                    </div>
+                                    <div class="col text-primary fw-bold">
+                                      151.635.000
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Set Items -->
+                        <div id="setItems" class="mt-0" style="display: none;">
+                          <div class="col-md-12 pt-3">
+                            <!-- Header -->
+                            <div
+                              class="header d-flex gap-2 mt-2 mb-3 px-3 py-2"
+                            >
+                              <div class="col-md-6 text-uppercase text-header">
+                                Item Number
+                              </div>
+                              <div class="col-md-5 text-uppercase text-header">
+                                Price
+                              </div>
+                              <div class="col-md-1"></div>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="body row gap-2 py-2">
+                              <!-- Item 1 -->
+                              <div class="col-md-12">
+                                <div class="d-flex gap-2 pe-2">
+                                  <!-- Item Number -->
+                                  <div class="col-md-6">
+                                    <div class="d-flex gap-3 flex-column">
+                                      <!-- Item Number 1 -->
+                                      <div
+                                        class="form-floating form-floating-outline col-md-12 mb-3"
+                                      >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          placeholder="112233"
+                                          id="itemNumber1"
+                                          value=""
+                                        />
+                                        <label for="itemNumber1"
+                                          >Item Number</label
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Price -->
+                                  <div class="col-md-5">
+                                    <!-- Price 1 -->
+                                    <div class="row g-2">
+                                      <div class="col-md-6">
+                                        <div
+                                          class="input-group input-group-merge"
+                                        >
+                                          <span class="input-group-text border-custom-merge"
+                                            >USD</span
+                                          >
+                                          <div
+                                            class="form-floating form-floating-outline"
+                                          >
+                                            <input
+                                              type="number"
+                                              class="form-control"
+                                              id="assetPriceUnit"
+                                              placeholder="15000"
+                                              value=""
+                                              aria-label="15000"
+                                              aria-describedby="assetPriceUnit"
+                                            />
+                                            <label for="assetPriceUnit"
+                                              >Price
+                                              <span class="text-danger"
+                                                >*</span
+                                              ></label
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <input
+                                          id="idrCurrency"
+                                          class="form-control form-control-lg h-100"
+                                          type="text"
+                                          placeholder="1212"
+                                          value="0"
+                                          disabled
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Button Collapse -->
+                                  <div class="col-md-1">
+                                    <button
+                                      class="btn btn-icon mt-1"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapse1"
+                                      aria-expanded="false"
+                                      aria-controls="collapse1"
+                                    >
+                                      <i
+                                        class="tf-icons mdi mdi-menu-down mdi-24px"
+                                      ></i>
+                                    </button>
+                                  </div>
+                                </div>
+
+                                <!-- Collapse 1 -->
+                                <div class="collapse ps-3" id="collapse1">
+                                  <div class="d-flex gap-1">
+                                    <!-- Sub Item Number -->
+                                    <div class="col-md-6 mt-0">
+                                      <div class="d-flex flex-column gap-3 pe-1">
+                                        <!-- 1 -->
+                                        <input
+                                          id="subItemNumber1"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="Charger 1"
+                                        />
+
+                                        <!-- 2 -->
+                                        <input
+                                          id="subItemNumber2"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="Unit HP 1"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <!-- Sub Price -->
+                                    <div class="col-md-5 mt-0">
+                                      <div class="d-flex flex-column gap-3 pe-1">
+                                        <!-- 1 -->
+                                        <input
+                                          id="subPrice1"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="SN-Charger 1"
+                                        />
+
+                                        <!-- 2 -->
+                                        <input
+                                          id="subPrice2"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="SN-Unit HP 1"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Item 2 -->
+                              <div class="col-md-12">
+                                <div class="d-flex gap-2 pe-2">
+                                  <!-- Item Number -->
+                                  <div class="col-md-6">
+                                    <div class="d-flex gap-3 flex-column">
+                                      <!-- Item Number 1 -->
+                                      <div
+                                        class="form-floating form-floating-outline col-md-12 mb-3"
+                                      >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          placeholder="112233"
+                                          id="itemNumber1"
+                                          value=""
+                                        />
+                                        <label for="itemNumber1"
+                                          >Item Number</label
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Price -->
+                                  <div class="col-md-5">
+                                    <!-- Price 1 -->
+                                    <div class="row g-2">
+                                      <div class="col-md-6">
+                                        <div
+                                          class="input-group input-group-merge"
+                                        >
+                                          <span class="input-group-text border-custom-merge"
+                                            >USD</span
+                                          >
+                                          <div
+                                            class="form-floating form-floating-outline"
+                                          >
+                                            <input
+                                              type="number"
+                                              class="form-control"
+                                              id="assetPriceUnit"
+                                              placeholder="15000"
+                                              value=""
+                                              aria-label="15000"
+                                              aria-describedby="assetPriceUnit"
+                                            />
+                                            <label for="assetPriceUnit"
+                                              >Price
+                                              <span class="text-danger"
+                                                >*</span
+                                              ></label
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <input
+                                          id="idrCurrency"
+                                          class="form-control form-control-lg h-100"
+                                          type="text"
+                                          placeholder="1212"
+                                          value="0"
+                                          disabled
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Button Collapse -->
+                                  <div class="col-md-1">
+                                    <button
+                                      class="btn btn-icon mt-1"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapse2"
+                                      aria-expanded="false"
+                                      aria-controls="collapse2"
+                                    >
+                                      <i
+                                        class="tf-icons mdi mdi-menu-down mdi-24px"
+                                      ></i>
+                                    </button>
+                                  </div>
+                                </div>
+
+                                <!-- Collapse 2 -->
+                                <div class="collapse ps-3" id="collapse2">
+                                  <div class="d-flex gap-1">
+                                    <!-- Sub Item Number -->
+                                    <div class="col-md-6 mt-0">
+                                      <div class="d-flex flex-column gap-3 pe-1">
+                                        <!-- 1 -->
+                                        <input
+                                          id="subItemNumber1"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="Charger 2"
+                                        />
+
+                                        <!-- 2 -->
+                                        <input
+                                          id="subItemNumber2"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="Unit HP 2"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <!-- Sub Price -->
+                                    <div class="col-md-5 mt-0">
+                                      <div class="d-flex flex-column gap-3 pe-1">
+                                        <!-- 1 -->
+                                        <input
+                                          id="subPrice1"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="SN-Charger 2"
+                                        />
+
+                                        <!-- 2 -->
+                                        <input
+                                          id="subPrice2"
+                                          class="form-control"
+                                          type="text"
+                                          placeholder="Sub Item 1"
+                                          value="SN-Unit HP 2"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="mt-3 text-end">
+                              <div class="d-flex gap-2 pe-3">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-5 text-end">
+                                  <div class="row">
+                                    <div class="col text-start">
+                                      Total Price (USD):
+                                    </div>
+                                    <div class="col text-primary fw-bold">
+                                      200.000
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col text-start">
+                                      Total Price (IDR):
+                                    </div>
+                                    <div class="col text-primary fw-bold">
+                                      151.635.000
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button Save & Cancel -->
+                <div class="col-md-12">
+                  <div class='pt-2 d-flex justify-content-between'>
+                    <button type='reset' class='btn btn-label-secondary me-sm-3 me-1'>
+                      Cancel
+                    </button>
+                    <div class="d-flex gap-2">
+                      <button type='submit' class='btn btn-success me-sm-3 me-1'>
+                        Save & Exit
+                      </button>
+                      <button type='submit' class='btn btn-primary'>
+                        Save & Next Entry
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src='../assets/vendor/libs/select2/select2.js'></script>
+    <script src="../assets/vendor/libs/cleavejs/cleave.js"></script>
+    <!-- <script src="../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script> -->
+    <script src="../assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="../assets/vendor/libs/dropzone/dropzone.js"></script>
+    <script src="../assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
+
+    <script src="../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+
+    <!-- Toastr -->
+    <script src="../assets/vendor/libs/toastr/toastr.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/asset-registration.js"></script>
+
+    <!-- Form Reapeter -->
+    <script>
+      $(function () {
+        var t = $(".form-repeater");
+
+        t.length &&
+          ((n = 2),
+          (o = 1),
+          t.on("addForm", function (e) {
+            e.preventDefault();
+          }),
+          t.repeater({
+            show: function () {
+              var r = $(this).find(".form-control, .form-select"),
+                a = $(this).find(".form-label");
+              r.each(function (e) {
+                var t = "form-repeater-" + n + "-" + o;
+                $(r[e]).attr("id", t), $(a[e]).attr("for", t), o++;
+              }),
+                n++,
+                $(this).slideDown();
+            },
+            hide: function (e) {
+              confirm("Are you sure you want to delete this element?") &&
+                $(this).slideUp(e);
+            },
+          }));
+      });
+    </script>
+
+    <!-- Select2 fetch data from json -->
+    <script>
+      fetch(
+        "../assets/json/asset-registration/list-asset-category-and-group.json"
+      )
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (jsonData) {
+          // Process the Asset Category and Group JSON data
+          const groupNames = jsonData.data.map(function (item) {
+            return item.asset_category_name;
+          });
+
+          const divisionName = jsonData.data.map(function (item) {
+            return item.asset_group_name;
+          });
+
+          const selectElement = document.getElementById("assetCatName");
+          const selectElement1 = document.getElementById("assetCatGroup");
+
+          groupNames.forEach(function (groupName) {
+            const optionElement = document.createElement("option");
+            const optionValue = groupName.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = groupName;
+            selectElement.appendChild(optionElement);
+          });
+
+          divisionName.forEach(function (divisionName) {
+            const optionElement = document.createElement("option");
+            const optionValue = divisionName.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = divisionName;
+            selectElement1.appendChild(optionElement);
+          });
+
+          // Fetch the Currency JSON data
+          return fetch("../assets/json/asset-registration/list-currency.json");
+        })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (jsonData) {
+          const data1 = jsonData.data.map(function (item) {
+            return item.abbreviation;
+          });
+
+          const selectElement = document.getElementById("oriCurrency");
+
+          data1.forEach(function (data1) {
+            const optionElement = document.createElement("option");
+            const optionValue = data1.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data1;
+            selectElement.appendChild(optionElement);
+          });
+
+          // Fetch the third JSON data
+          return fetch(
+            "../assets/json/asset-registration/list-department.json"
+          );
+        })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (jsonData) {
+          const data1 = jsonData.data.map(function (item) {
+            return item.division_name;
+          });
+
+          const data2 = jsonData.data.map(function (item) {
+            return item.department_name;
+          });
+
+          const data3 = jsonData.data.map(function (item) {
+            return item.employee_name;
+          });
+
+          const selectElement = document.getElementById("division");
+          const selectElement1 = document.getElementById("department");
+          const selectElement2 = document.getElementById("employee");
+
+          data1.forEach(function (data1) {
+            const optionElement = document.createElement("option");
+            const optionValue = data1.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data1;
+            selectElement.appendChild(optionElement);
+          });
+
+          data2.forEach(function (data2) {
+            const optionElement = document.createElement("option");
+            const optionValue = data2.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data2;
+            selectElement1.appendChild(optionElement);
+          });
+
+          data3.forEach(function (data3) {
+            const optionElement = document.createElement("option");
+            const optionValue = data3.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data3;
+            selectElement2.appendChild(optionElement);
+          });
+
+          // Fetch the Location and Sub Location JSON data
+          return fetch("../assets/json/asset-registration/list-location.json");
+        })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (jsonData) {
+          const data1 = jsonData.data.map(function (item) {
+            return item.location_name;
+          });
+
+          const data2 = [];
+          const data3 = [];
+
+          jsonData.data.forEach(function (item) {
+            item.sub_locations.forEach(function (subItem) {
+              data2.push(subItem.sub_location_name);
+
+              subItem.sub_sub_locations.forEach(function (subSubItem) {
+                data3.push(subSubItem.sub_sub_location_name);
+              });
+            });
+          });
+
+          const selectElement = document.getElementById("locationName");
+          const selectElement1 = document.getElementById("subLocation");
+          const selectElement2 = document.getElementById("subSubLocation");
+
+          data1.forEach(function (data1) {
+            const optionElement = document.createElement("option");
+            const optionValue = data1.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data1;
+            selectElement.appendChild(optionElement);
+          });
+
+          data2.forEach(function (data2) {
+            const optionElement = document.createElement("option");
+            const optionValue = data2.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data2;
+            selectElement1.appendChild(optionElement);
+          });
+
+          data3.forEach(function (data3) {
+            const optionElement = document.createElement("option");
+            const optionValue = data3.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data3;
+            selectElement2.appendChild(optionElement);
+          });
+
+          // Fetch the UoM JSON data
+          return fetch(
+            "../assets/json/asset-registration/list-unit-of-measurement.json"
+          );
+        })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (jsonData) {
+          const data1 = jsonData.data.map(function (item) {
+            return item.unit_of_measurement_name;
+          });
+
+          const selectElement = document.getElementById("assetUom");
+
+          data1.forEach(function (data1) {
+            const optionElement = document.createElement("option");
+            const optionValue = data1.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data1;
+            selectElement.appendChild(optionElement);
+          });
+
+          return fetch(
+            "../assets/json/list-department.json"
+          );
+        })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (jsonData) {
+          const data1 = jsonData.data.map(function (item) {
+            return item.po_number;
+          });
+
+          const selectElement = document.getElementById("poNumber");
+
+          data1.forEach(function (data1) {
+            const optionElement = document.createElement("option");
+            const optionValue = data1.replace(/\s+/g, "-").toLowerCase();
+            optionElement.value = optionValue;
+            optionElement.textContent = data1;
+            selectElement.appendChild(optionElement);
+          });
+        })
+        .catch(function (error) {
+          console.log("Error:", error);
+        });
+    </script>
+  </body>
+</html>
+
+<!-- beautify ignore:end -->

@@ -17,7 +17,6 @@ $(function () {
       columns: [
         { data: "name" },
         { data: "email" },
-        { data: "role" },
         { data: "action" },
       ],
       bLengthChange: false,
@@ -51,31 +50,6 @@ $(function () {
           },
         },
       ],
-      initComplete: function () {
-        this.api()
-          .columns(2)
-          .every(function () {
-            var column = this;
-            var select = $(
-              '<select id="UserRole" class="form-select text-capitalize"><option value="">Select Role</option></select>'
-            )
-              .appendTo(".user_role")
-              .on("change", function () {
-                var val = $.fn.dataTable.util.escapeRegex($(this).val());
-                column.search(val ? "^" + val + "$" : "", true, false).draw();
-              });
-
-            column
-              .data()
-              .unique()
-              .sort()
-              .each(function (data) {
-                select.append(
-                  '<option value="' + data + '">' + data + "</option>"
-                );
-              });
-          });
-      },
     });
 
     // Show Delete Confirmation

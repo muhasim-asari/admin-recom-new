@@ -98,9 +98,24 @@ $(function () {
                 },
             ],
         })),
-        $(".datatables-division tbody").on("click", ".delete-record", function () {
-            e.row($(this).parents("tr")).remove().draw();
-        });
+        // Show Delete Confirmation
+   $(".datatables-division tbody").on("click", ".delete-record", function () {
+
+    var clickedRow = $(this).closest("tr");
+    $("#deleteConfirmation").modal("show");
+
+    $("#deleteConfirmation").data("clickedRow", clickedRow);
+  });
+
+  // Delete Data
+  $("#deleteConfirmation").on("click", ".btn-confirm", function () {
+    var clickedRow = $("#deleteConfirmation").data("clickedRow");
+    
+    var table = $(".datatables-division").DataTable();
+    table.row(clickedRow).remove().draw();
+
+    $("#deleteConfirmation").modal("hide");
+  });
 }),
     $(document).ready(function () {
         toastr.options = {

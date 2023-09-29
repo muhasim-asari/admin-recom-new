@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "code": "M-001",
+      "maintenance_group_name": "AC Maintenance",
+      "period": "6 Bulan",
+      "description": "Pembersihan Indoor & Outdoor"
+    },
+    {
+      "id": 2,
+      "code": "M-002",
+      "maintenance_group_name": "Oil Replacement",
+      "period": "2.000 Km/ 3 Bulan",
+      "description": "Penggantian Oli Motor"
+    },
+    {
+      "id": 3,
+      "code": "M-003",
+      "maintenance_group_name": "Oil Replacement (Mobil)",
+      "period": "10.000 Km/ 6 Bulan",
+      "description": "Penggantian Oli Motor"
+    }
+  ]
+}

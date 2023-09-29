@@ -258,4 +258,9 @@
 .idr::before {
   content: 'IDR';
 }
-
+.form-select.custom{
+  padding: calc(.5rem - 1px) calc(1.96875rem - 1px) calc(.5rem - 1px) calc(.875rem - 1px)!important;
+}
+.form-select.custom:focus {
+  border: 1px solid #d8d8dd;
+}

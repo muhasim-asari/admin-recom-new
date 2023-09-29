@@ -253,16 +253,16 @@
             </li>
 
             <li class="menu-item">
-              <a href="../master/master-data-division.html" class="menu-link">
-                <i class="menu-icon tf-icons mdi mdi-account-check-outline"></i>
-                <div data-i18n="Division">Division</div>
+              <a href="../master/master-data-department.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-briefcase-outline"></i>
+                <div data-i18n="Department">Department</div>
               </a>
             </li>
 
             <li class="menu-item">
-              <a href="../master/master-data-department.html" class="menu-link">
-                <i class="menu-icon tf-icons mdi mdi-briefcase-outline"></i>
-                <div data-i18n="Department">Department</div>
+              <a href="../master/master-data-division.html" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-account-check-outline"></i>
+                <div data-i18n="Division">Division</div>
               </a>
             </li>
 
@@ -302,19 +302,19 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="../asset-depreciation/asset-depreciation.html" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-chart-line-variant"></i>
                 <div data-i18n="Asset Depreciation">Asset Depreciation</div>
               </a>
             </li>
-            <li class="menu-item">
+       <!--     <li class="menu-item">
               <a href="#" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-chart-line"></i>
                 <div data-i18n="Depreciation N/A">Depreciation N/A</div>
               </a>
-            </li>
+            </li> -->
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="../asset-wo-tag/asset-w-o-tags.html" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-tag-outline"></i>
                 <div data-i18n="Asset W/O Tags">Asset W/O Tags</div>
               </a>
@@ -398,20 +398,25 @@
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons mdi mdi-wrench-clock-outline"></i>
-                <div data-i18n="Periodic Maintenance">Periodic Maintenance</div>
+                  <i class="menu-icon tf-icons mdi mdi-wrench-clock-outline"></i>
+                  <div data-i18n="Periodic Maintenance">Periodic Maintenance</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Maintenance Group">Maintenance Group</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Asset Maintenance">Asset Maintenance</div>
-                  </a>
-                </li>
+                  <li class="menu-item">
+                      <a href="../asset-maintenance/maintenance-group.html" class="menu-link">
+                          <div data-i18n="Maintenance Group">Maintenance Group</div>
+                      </a>
+                  </li>
+                  <li class="menu-item">
+                      <a href="#" class="menu-link">
+                          <div data-i18n="Asset Maintenance">Asset Maintenance</div>
+                      </a>
+                  </li>
+                  <li class="menu-item">
+                      <a href="#" class="menu-link">
+                          <div data-i18n="Maintenance Due List">Maintenance Due List</div>
+                      </a>
+                  </li>
               </ul>
             </li>
 
@@ -420,7 +425,7 @@
               <span class="menu-header-text">Report</span>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="../report/depreciation-report.html" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-file-chart-outline"></i>
                 <div data-i18n="Depreciation Report">Depreciation Report</div>
               </a>
@@ -1121,7 +1126,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="itemNumber"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             Item Number
@@ -1135,7 +1140,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="poNumber"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             PO Number
@@ -1147,10 +1152,10 @@
 
                         <!-- Serial Number -->
                         <div class="gap-2">
-                          <label for="serialNumber">Serial Number</label>
+                          <label for="serialNumber" class="fw-500">Serial Number</label>
                           <ul class="mt-2 mb-0">
-                            <li><span style="width: 26%; display: inline-block;">Unit HP 1</span><label for="serialNumber">: SN-0001</label></li>
-                            <li><span style="width: 26%; display: inline-block;">Charger 1</span><label for="serialNumber">: SN-0002</label></li>
+                            <li><span style="width: 26%; display: inline-block; font-weight: 500;">Unit HP 1</span><label for="serialNumber">: SN-0001</label></li>
+                            <li><span style="width: 26%; display: inline-block; font-weight: 500;">Charger 1</span><label for="serialNumber">: SN-0002</label></li>
                           </ul>
                         </div>
 
@@ -1158,7 +1163,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="pic"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             PIC
@@ -1170,7 +1175,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="location"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             Location
@@ -1186,7 +1191,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="price"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             Price
@@ -1203,7 +1208,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="warrantyDate"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             Warranty Date
@@ -1217,7 +1222,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="receivedDate"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             Received Date
@@ -1231,7 +1236,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="usedStartDate"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             Used Start Date
@@ -1243,7 +1248,7 @@
                         <div class="read-only-form gap-2">
                           <div
                             id="unitOfMeasurement"
-                            class="label-read-only"
+                            class="label-read-only fw-500"
                             style="width: 33.33%!important;"
                           >
                             Unit Of Measurement

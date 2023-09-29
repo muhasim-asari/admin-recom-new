@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default"
+    data-assets-path="../assets/" data-template="vertical-menu-template">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Asset Depreciation - Admin Recom</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/materialdesignicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
+    <!-- <link rel='stylesheet' href='../assets/vendor/libs/select2/select2.css' /> -->
+    <link rel="stylesheet" href="../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/flatpickr/flatpickr.css" />
+
+    <!-- Toastr -->
+    <link rel="stylesheet" href="../assets/vendor/libs/toastr/toastr.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/animate-css/animate.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/core-theme.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <script src="../assets/vendor/js/template-customizer.js"></script>
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="javascript:void(0);" class="app-brand-link">
+                        <span class="app-brand-text demo menu-text ms-2">Admin Dashboard</span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+                        <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.4854 4.88844C11.0081 4.41121 10.2344 4.41121 9.75715 4.88844L4.51028 10.1353C4.03297 10.6126 4.03297 11.3865 4.51028 11.8638L9.75715 17.1107C10.2344 17.5879 11.0081 17.5879 11.4854 17.1107C11.9626 16.6334 11.9626 15.8597 11.4854 15.3824L7.96672 11.8638C7.48942 11.3865 7.48942 10.6126 7.96672 10.1353L11.4854 6.61667C11.9626 6.13943 11.9626 5.36568 11.4854 4.88844Z"
+                                fill="currentColor" fill-opacity="0.6"></path>
+                            <path
+                                d="M15.8683 4.88844L10.6214 10.1353C10.1441 10.6126 10.1441 11.3865 10.6214 11.8638L15.8683 17.1107C16.3455 17.5879 17.1192 17.5879 17.5965 17.1107C18.0737 16.6334 18.0737 15.8597 17.5965 15.3824L14.0778 11.8638C13.6005 11.3865 13.6005 10.6126 14.0778 10.1353L17.5965 6.61667C18.0737 6.13943 18.0737 5.36568 17.5965 4.88844C17.1192 4.41121 16.3455 4.41121 15.8683 4.88844Z"
+                                fill="currentColor" fill-opacity="0.38"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+                <ul class="menu-inner py-1">
+                    <!-- Dashboards -->
+                    <li class="menu-item">
+                        <a href="../dashboard.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
+                            <div data-i18n="Dashboards">Dashboards</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Admin Super</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../master/master-data-group.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-account-group-outline"></i>
+                            <div data-i18n="Group">Group</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../master/master-data-company.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-office-building-outline"></i>
+                            <div data-i18n="Company">Company</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Admin Company</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../master/master-data-branch.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-office-building-outline"></i>
+                            <div data-i18n="Branch">Branch</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../master/master-data-currency.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-cash-multiple"></i>
+                            <div data-i18n="Currency">Currency</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Master Data</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons mdi mdi-database-outline"></i>
+                            <div data-i18n="Asset">Asset</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="../master/master-data-asset-category.html" class="menu-link">
+                                    <div data-i18n="Asset Category">Asset Category</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../master/master-data-asset-group.html" class="menu-link">
+                                    <div data-i18n="Asset Group">Asset Group</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../master/master-data-location.html" class="menu-link">
+                                    <div data-i18n="Location">Location</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../master/master-data-supplier.html" class="menu-link">
+                                    <div data-i18n="Supplier">Supplier</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../master/master-data-unit-of-measurement.html" class="menu-link">
+                                    <div data-i18n="Unit of Measurement">
+                                        Unit of Measurement
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="../master/master-data-division.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-account-check-outline"></i>
+                            <div data-i18n="Division">Division</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="../master/master-data-department.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-briefcase-outline"></i>
+                            <div data-i18n="Department">Department</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="../master/master-data-employee.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+                            <div data-i18n="Employee">Employee</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Purchase Order</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../po-data/po-data.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+                            <div data-i18n="PO Data">PO Data</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Asset Management</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../asset-registration/asset-registration.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-folder-open-outline"></i>
+                            <div data-i18n="Asset Registration">Asset Registration</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../asset-list/asset-list.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-list-box-outline"></i>
+                            <div data-i18n="Asset List">Asset List</div>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="../asset-depreciation/asset-depreciation.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-chart-line-variant"></i>
+                            <div data-i18n="Asset Depreciation">Asset Depreciation</div>
+                        </a>
+                    </li>
+                    <!-- <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-chart-line"></i>
+                <div data-i18n="Depreciation N/A">Depreciation N/A</div>
+              </a>
+            </li> -->
+                    <li class="menu-item">
+                        <a href="../asset-wo-tag/asset-w-o-tags.html" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-tag-outline"></i>
+                            <div data-i18n="Asset W/O Tags">Asset W/O Tags</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons mdi mdi-filter-outline"></i>
+                            <div data-i18n="Asset Filter By">Asset Filter By</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="../admin-management/admin-management-filter-by-asset-category.html"
+                                    class="menu-link">
+                                    <div data-i18n="Asset Category">Asset Category</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../admin-management/admin-management-filter-by-location.html"
+                                    class="menu-link">
+                                    <div data-i18n="Location">Location</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../admin-management/admin-management-filter-by-supplier.html"
+                                    class="menu-link">
+                                    <div data-i18n="Supplier">Supplier</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Asset Lifecycle</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-file-multiple-outline"></i>
+                            <div data-i18n="Asset Audit Data">Asset Audit Data</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-file-arrow-left-right-outline"></i>
+                            <div data-i18n="Asset Moving Data">Asset Moving Data</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-file-import-outline"></i>
+                            <div data-i18n="Asset In">Asset In</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-file-export-outline"></i>
+                            <div data-i18n="Asset Out">Asset Out</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-minus-circle-outline"></i>
+                            <div data-i18n="Asset Disposal Data">Asset Disposal Data</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-cog-outline"></i>
+                            <div data-i18n="Asset Repair">Asset Repair</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons mdi mdi-wrench-clock-outline"></i>
+                            <div data-i18n="Periodic Maintenance">Periodic Maintenance</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="../asset-maintenance/maintenance-group.html" class="menu-link">
+                                    <div data-i18n="Maintenance Group">Maintenance Group</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Asset Maintenance">Asset Maintenance</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Maintenance Due List">Maintenance Due List</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Report -->
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Report</span>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-file-chart-outline"></i>
+                            <div data-i18n="Depreciation Report">Depreciation Report</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header fw-light mt-4">
+                        <span class="menu-header-text">Approval Data</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+                            <div data-i18n="Asset Audit">Asset Audit</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-swap-horizontal"></i>
+                            <div data-i18n="Asset Moving">Asset Moving</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons mdi mdi-file-arrow-up-down-outline"></i>
+                            <div data-i18n="Asset In/Out">Asset In/Out</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Asset In">Asset In</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Asset Out">Asset Out</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="menu-icon tf-icons mdi mdi-minus-circle-outline"></i>
+                            <div data-i18n="Asset Disposal">Asset Disposal</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons mdi mdi-cog-outline"></i>
+                            <div data-i18n="Asset Repair/ Maintenance">
+                                Asset Repair/ Maintenance
+                            </div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Asset Repair">Asset Repair</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Asset Maintenance">Asset Maintenance</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
+
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar-fixed">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="mdi mdi-menu mdi-24px"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="../assets/img/avatars/1.png" alt=""
+                                            class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="../assets/img/avatars/1.png" alt=""
+                                                            class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">John Doe</span>
+                                                    <small class="text-muted">Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../" target="_blank">
+                                            <i class="mdi mdi-logout me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </nav>
+                <!-- / Navbar -->
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <h4 class="fw-bold py-3 mb-4">
+                            <span class="text-muted"><a href="./depreciation-report.html">Depreciation Report</a> / Items Depreciation Report</span>
+                        </h4>
+
+
+                        <div class="row gap-4">
+
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header pb-0">
+                                        <div class="row g-3">
+                                            <div class="col-md-11">
+                                                <div class="row">
+                                                    <div class="col-2">Asset Code</div>
+                                                    <div class="col-8 mb-2">: 11-22-33-44-55-66-123-02</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2">Asset Name</div>
+                                                    <div class="col-8 mb-2">: Kursi Kayu</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2">Total Item</div>
+                                                    <div class="col-8">: 10</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2">Period</div>
+                                                    <div class="col-8">: January 2023</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <button type='button' onclick="myApp.print()" class='btn btn-danger'>
+                                                    Print
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="border-2 mb-0">
+                                    <div class="card-body">
+                                        <div class="col-md-12">
+                                            <div class="nav-align-top">
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                    <li class="nav-item">
+                                                        <button type="button" class="nav-link text-capitalize active"
+                                                            role="tab" data-bs-toggle="tab"
+                                                            data-bs-target="#navs-commercial-depreciation"
+                                                            aria-controls="navs-commercial-depreciation"
+                                                            aria-selected="true">
+                                                            Commercial Depreciation
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <button type="button" class="nav-link text-capitalize"
+                                                            role="tab" data-bs-toggle="tab"
+                                                            data-bs-target="#navs-fiscal-depreciation"
+                                                            aria-controls="navs-fiscal-depreciation"
+                                                            aria-selected="false">
+                                                            Fiscal Depreciation
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" style="padding-top: 10px;">
+                                            <div
+                                                class="dt-action-buttons text-xl-end text-lg-start text-md-end text-start d-flex align-items-center justify-content-end flex-md-row flex-column mb-3 mb-md-0">
+                                                <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                                                    <label><input type="search" class="form-control form-control-sm"
+                                                            placeholder="Search asset code"
+                                                            aria-controls="DataTables_Table_0">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <!-- Commercial Depreciation & Fiscal Depreciation -->
+                                        <div class="card-datatable table-responsive">
+                                            <div class="tab-content p-0">
+                                                <!-- Commercial Depreciation -->
+                                                <div class="tab-pane fade show active" id="navs-commercial-depreciation"
+                                                    role="tabpanel">
+                                                    <table class="table">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th>No</th>
+                                                                <th>Item Number</th>
+                                                                <th>PO Number</th>
+                                                                <th>Acquisition Cost</th>
+                                                                <th>Depreciation Value</th>
+                                                                <th>Net Book Value</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody style="font-size: 10px;">
+                                                            <tr>
+                                                                <td colspan="8" style="border-bottom: 2px solid;">
+                                                                    <b>SUPPLIER A</b></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>IN-20230801-A001</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>IN-20230801-A002</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>IN-20230801-A003</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>IN-20230801-A004</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>IN-20230801-A005</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr style="font-weight: bold;">
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>Total</td>
+                                                                <td>IDR 1.250.000</td>
+                                                                <td>IDR 113.636,35</td>
+                                                                <td>IDR 1.136.363,65</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="8" style="border-bottom: 2px solid;">
+                                                                    <b>SUPPLIER B</b></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>IN-20230801-A006</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td>IN-20230801-A007</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td>IN-20230801-A008</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td>IN-20230801-A009</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td>IN-20230801-A010</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr style="font-weight: bold;">
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>Total</td>
+                                                                <td>IDR 1.250.000</td>
+                                                                <td>IDR 113.636,35</td>
+                                                                <td>IDR 1.136.363,65</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- Fiscal Depreciation -->
+                                                <div class="tab-pane fade" id="navs-fiscal-depreciation"
+                                                    role="tabpanel">
+                                                    <table class="table">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th>No</th>
+                                                                <th>Item Number</th>
+                                                                <th>PO Number</th>
+                                                                <th>Acquisition Cost</th>
+                                                                <th>Depreciation Value</th>
+                                                                <th>Net Book Value</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody style="font-size: 10px;">
+                                                            <tr>
+                                                                <td colspan="8" style="border-bottom: 2px solid;">
+                                                                    <b>SUPPLIER A</b>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>IN-20230801-A001</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>IN-20230801-A002</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>IN-20230801-A003</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>IN-20230801-A004</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>IN-20230801-A005</td>
+                                                                <td>PO-02072023-001</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr style="font-weight: bold;">
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>Total</td>
+                                                                <td>IDR 1.250.000</td>
+                                                                <td>IDR 113.636,35</td>
+                                                                <td>IDR 1.136.363,65</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="8" style="border-bottom: 2px solid;">
+                                                                    <b>SUPPLIER B</b>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>IN-20230801-A006</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td>IN-20230801-A007</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td>IN-20230801-A008</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td>IN-20230801-A009</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td>IN-20230801-A010</td>
+                                                                <td>PO-02072023-002</td>
+                                                                <td>IDR 250.000</td>
+                                                                <td>IDR 22.727,27</td>
+                                                                <td>IDR 22.727,73</td>
+                                                            </tr>
+                                                            <tr style="font-weight: bold;">
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>Total</td>
+                                                                <td>IDR 1.250.000</td>
+                                                                <td>IDR 113.636,35</td>
+                                                                <td>IDR 1.136.363,65</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="editDepreciationValue" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="depreciationValue">
+                                                Depreciation Value
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col-md-12 mb-4">
+                                                <!-- Item Number -->
+                                                <div class="read-only-form mb-1">
+                                                    <span class="label-read-only w-30">Period</span>
+                                                    <label class="fw-500">March 2023</label>
+                                                </div>
+                                                <!-- PO Number -->
+                                                <div class="read-only-form mb-1">
+                                                    <span class="label-read-only w-30">Depreciation Value</span>
+                                                    <label class="fw-500">IDR 22.727,27</label>
+                                                </div>
+                                                <!-- Depreciation Start Date -->
+                                                <div class="read-only-form mb-1">
+                                                    <span class="label-read-only w-30">Net Book Value</span>
+                                                    <label class="fw-500">IDR 90.909,11</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-group input-group-merge mb-4">
+                                                <span class="input-group-text border-custom-merge">IDR</span>
+                                                <div class="form-floating form-floating-outline">
+                                                    <input type="number" class="form-control" id="newDepreciationValue"
+                                                        placeholder="15000" value="" aria-label="15000"
+                                                        aria-describedby="assetPriceUnit">
+                                                    <label for="newDepreciationValue">New Depreciation Value</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-group input-group-merge mb-2">
+                                                <span class="input-group-text border-custom-merge">IDR</span>
+                                                <div class="form-floating form-floating-outline">
+                                                    <input type="number" class="form-control" id="newNetBookValue"
+                                                        placeholder="15000" value="" aria-label="15000"
+                                                        aria-describedby="assetPriceUnit">
+                                                    <label for="newNetBookValue">New Net Book Value</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Cancel
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-confirm">
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Content -->
+
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <!-- <script src='../assets/vendor/libs/select2/select2.js'></script> -->
+    <script src="../assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+    <script src="../assets/vendor/libs/flatpickr/flatpickr.js"></script>
+
+    <script src="../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+
+    <!-- Toastr -->
+    <script src="../assets/vendor/libs/toastr/toastr.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/depreciation-report.js"></script>
+    <!-- <script>
+        var groupColumn = 3;
+            var table = $('#example').DataTable({
+                columnDefs: [{ visible: false, targets: groupColumn }],
+                order: [[groupColumn, 'asc']],
+                displayLength: 25,
+                drawCallback: function (settings) {
+                    var api = this.api();
+                    var rows = api.rows({ page: 'current' }).nodes();
+                    var last = null;
+
+                    api.column(groupColumn, { page: 'current' })
+                        .data()
+                        .each(function (group, i) {
+                            if (last !== group) {
+                                $(rows)
+                                    .eq(i)
+                                    .before(
+                                        '<tr class="group"><td colspan="5">' +
+                                        group +
+                                        '</td></tr>'
+                                    );
+
+                                last = group;
+                            }
+                        });
+                }
+            });
+
+            // Order by the grouping
+            $('#example tbody').on('click', 'tr.group', function () {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
+                    table.order([groupColumn, 'desc']).draw();
+                }
+                else {
+                    table.order([groupColumn, 'asc']).draw();
+                }
+            });
+    </script> -->
+
+</body>
+
+</html>
+
+<!-- beautify ignore:end -->

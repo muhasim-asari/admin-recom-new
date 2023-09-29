@@ -17,16 +17,16 @@ $(function () {
             bLengthChange: false,
             bInfo: true,
             columnDefs: [
-                {
+                       {
                     responsivePriority: 2,
                     targets: 1,
                     render: function (e, t, row, n) {
                         var getSwitch = function (base_currency) {
                             switch (base_currency) {
                                 case "Active":
-                                    return '<label class="switch switch-success"><input type="checkbox" class="switch-input" checked=""><span class="switch-toggle-slider"><span class="switch-on"></span><span class="switch-off"></span></span><span class="switch-label"></span></label>';
+                                    return '<label class="switch switch-primary"><input type="checkbox" class="switch-input" checked=""><span class="switch-toggle-slider"><span class="switch-on"></span><span class="switch-off"></span></span><span class="switch-label"></span></label>';
                                 case "Not Active":
-                                    return '<label class="switch switch-success"><input type="checkbox" class="switch-input" ><span class="switch-toggle-slider"><span class="switch-on"></span><span class="switch-off"></span></span><span class="switch-label"></span></label>';
+                                    return '<label class="switch switch-primary"><input type="checkbox" class="switch-input" ><span class="switch-toggle-slider"><span class="switch-on"></span><span class="switch-off"></span></span><span class="switch-label"></span></label>';
                             }
                         };
                         return (
@@ -34,6 +34,26 @@ $(function () {
                             getSwitch(row.base_currency) +
                             "</div>"
                         );
+                    },
+                },
+		{
+                    target: 3,
+                    render: function (e, t, row, n) {
+                        var getStatusColor = function (status) {
+                            switch (status) {
+                                case "Active":
+                                    return "text-primary";
+                                case "Inactive":
+                                    return "text-danger";
+                                default:
+                                    return "";
+                            }
+                        };
+
+                        return (
+                            "<span class='" + getStatusColor(row.status) + " fw-normal'>" + row.status + "</span>"
+                        )
+
                     },
                 },
                 {
@@ -117,9 +137,24 @@ $(function () {
                     })
             },
         })),
-        $(".datatables-master-currency tbody").on("click", ".delete-record", function () {
-            e.row($(this).parents("tr")).remove().draw();
-        });
+        // Show Delete Confirmation
+   $(".datatables-master-currency tbody").on("click", ".delete-record", function () {
+
+    var clickedRow = $(this).closest("tr");
+    $("#deleteConfirmation").modal("show");
+
+    $("#deleteConfirmation").data("clickedRow", clickedRow);
+  });
+
+  // Delete Data
+  $("#deleteConfirmation").on("click", ".btn-confirm", function () {
+    var clickedRow = $("#deleteConfirmation").data("clickedRow");
+    
+    var table = $(".datatables-master-currency").DataTable();
+    table.row(clickedRow).remove().draw();
+
+    $("#deleteConfirmation").modal("hide");
+  });
 }),
     $(document).ready(function () {
         toastr.options = {

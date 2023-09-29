@@ -1,42 +1,18 @@
 "use strict";
 !(function () {
-  let e, o, r, t, s;
-  t = (
-    isDarkStyle
-      ? ((e = config.colors_dark.cardColor),
-        (o = config.colors_dark.headingColor),
-        (r = config.colors_dark.textMuted),
-        (s = config.colors_dark.bodyColor),
-        config.colors_dark)
-      : ((e = config.colors.cardColor),
-        (o = config.colors.headingColor),
-        (r = config.colors.textMuted),
-        (s = config.colors.bodyColor),
-        config.colors)
-  ).borderColor;
-  const a = { series1: "#826af9", series2: "#d2b0ff", bg: "#f8d3ff" },
-    i = {
-      series1: "#FF625F",
-      series2: "#83E542",
-      series3: "#787EFF",
-      series4: "#FDBE42",
-      series5: "#29dac7",
-    },
-    l = { series1: "#ab7efd", series2: "#b992fe", series3: "#e0cffe" };
-  function n(e, o) {
-    let r = 0;
-    for (var t = []; r < e; ) {
-      var s = "w" + (r + 1).toString(),
-        a = Math.floor(Math.random() * (o.max - o.min + 1)) + o.min;
-      t.push({ x: s, y: a }), r++;
-    }
-    return t;
-  }
+  let s,
+  i = {
+    series1: "#FF625F",
+    series2: "#83E542",
+    series3: "#787EFF",
+    series4: "#FDBE42",
+    series5: "#29dac7",
+  };
   var c = document.querySelector("#dataAsset"),
     d = {
       chart: { height: 310, parentHeightOffset: 0, type: "donut" },
       labels: ["IT Hardware & Software", "Furniture", "Electronics", "Vehicles"],
-      series: [1000, 240, 534, 123],
+      series: [1000, 240, 534, 360],
       colors: [i.series1, i.series2, i.series3, i.series4],
       stroke: { width: 0 },
       dataLabels: {
@@ -50,7 +26,7 @@
         position: "bottom",
         offsetY: 2,
         markers: { width: 8, height: 8, offsetX: -3 },
-        itemMargin: { horizontal: 8, vertical: 4 },
+        itemMargin: { horizontal: 12, vertical: 5 },
         fontSize: "13px",
         fontFamily: "Inter",
         fontWeight: 400,
@@ -78,7 +54,11 @@
                 color: "#4C4E64DE",
                 label: "Total Data Asset",
                 formatter: function (e) {
-                  return "1002";
+                  // console.log(e.config.series)
+                  const series = e.config.series;
+                  const sum = series.reduce((total, currentValue) => total + parseInt(currentValue), 0);
+                  // console.log(sum)
+                  return sum;
                 },
               },
             },

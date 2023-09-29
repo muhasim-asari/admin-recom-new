@@ -95,9 +95,9 @@ $(function () {
 
 ("use strict");
 !(function () {
-  var a = `<div class="dz-preview dz-file-preview w-100 m-0">
+  var a = `<div class="dz-preview dz-file-preview">
   <div class="dz-details">
-    <div class="dz-thumbnail w-100" style="box-sizing: border-box;">
+    <div class="dz-thumbnail">
       <img data-dz-thumbnail>
       <span class="dz-nopreview">No preview</span>
       <div class="dz-success-mark"></div>

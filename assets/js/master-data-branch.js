@@ -47,10 +47,7 @@ $(function () {
                 format: {
                   body: function (data, row, column, node) {
                     var text = node.textContent || node.innerText;
-                    if (
-                      node.classList &&
-                      node.classList.contains("user-name")
-                    ) {
+                    if (node.classList && node.classList.contains("user-name")) {
                       return node.lastChild.firstChild.textContent;
                     } else {
                       return text;
@@ -59,8 +56,8 @@ $(function () {
                 },
               },
               customize: function (xlsx) {
-                var sheet = xlsx.xl.worksheets["sheet1.xml"];
-                $('row c[r^="D"]', sheet).attr("s", "2");
+                var sheet = xlsx.xl.worksheets['sheet1.xml'];
+                $('row c[r^="D"]', sheet).attr('s', '2');
               },
             },
             {
@@ -82,28 +79,26 @@ $(function () {
         },
       ],
     })),
+
     // Show Delete Confirmation
-    $(".datatables-master-branch tbody").on(
-      "click",
-      ".delete-record",
-      function () {
-        var clickedRow = $(this).closest("tr");
-        $("#deleteConfirmation").modal("show");
+    $(".datatables-master-branch tbody").on("click", ".delete-record", function () {
 
-        $("#deleteConfirmation").data("clickedRow", clickedRow);
-      }
-    );
+      var clickedRow = $(this).closest("tr");
+      $("#deleteConfirmation").modal("show");
 
-  // Delete Data
-  $("#deleteConfirmation").on("click", ".btn-confirm", function () {
-    var clickedRow = $("#deleteConfirmation").data("clickedRow");
+      $("#deleteConfirmation").data("clickedRow", clickedRow);
+    });
 
-    var table = $(".datatables-master-branch").DataTable();
-    table.row(clickedRow).remove().draw();
+    // Delete Data
+    $("#deleteConfirmation").on("click", ".btn-confirm", function () {
+      var clickedRow = $("#deleteConfirmation").data("clickedRow");
+      
+      var table = $(".datatables-master-branch").DataTable();
+      table.row(clickedRow).remove().draw();
 
-    $("#deleteConfirmation").modal("hide");
-  });
-  
+      $("#deleteConfirmation").modal("hide");
+    });
+}),
   $(document).ready(function () {
     toastr.options = {
       closeButton: true,
@@ -118,7 +113,7 @@ $(function () {
       hideMethod: "fadeOut",
     };
 
-    $(document).ready(function handleFormSubmit(event) {
+    function handleFormSubmit(event) {
       event.preventDefault();
       var branchName = $("#branchName").val();
       var companyName = $("#companyName").val();
@@ -128,22 +123,13 @@ $(function () {
       var emailCompany = $("#emailCompany").val();
       var address = $("#address").val();
 
-      if (
-        companyName &&
-        groupName &&
-        phoneNumber &&
-        fax &&
-        emailCompany &&
-        branchName &&
-        address
-      ) {
+      if (companyName && groupName && phoneNumber && fax && emailCompany && branchName && address ) {
         toastr.success("Berhasil Membuat Branch Baru", "Create Success!");
       } else {
         toastr.error("Gagal Membuat Branch Baru", "Create Error!");
       }
-    });
+    }
 
     $("#createBranch").submit(handleFormSubmit);
     $("#updateBranch").submit(handleFormSubmit);
   });
-});

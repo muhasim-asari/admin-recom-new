@@ -48,7 +48,7 @@ $(function() {
             ];
         
             if (redMonths.includes(data)) {
-              return '<span class="text-danger">' + data + '</span>';
+              return '<span class="text-success">' + data + '</span>';
             }else if (blueMonths.includes(data)) {
               return '<span class="text-primary">' + data + '</span>';
             } else {

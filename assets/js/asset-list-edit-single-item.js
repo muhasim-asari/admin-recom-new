@@ -34,7 +34,7 @@ $(function () {
           target: 3,
           render: function (e, t, a, n) {
               return (
-                  '<span>' + a.pic + '</span> <br> <a href="#" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-secondary" data-bs-original-title="tes"><span>'+ a.location + ' > ' + a.sublocation +' ...</span></a>'
+                  '<span>' + a.pic + '</span> <br> <a href="#" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-secondary" title="Gedung A > lantai 2 > Ruang C"><span>'+ a.location + ' > ' + a.sublocation +' ...</span></a>'
               )
           }
         },    

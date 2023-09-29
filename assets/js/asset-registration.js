@@ -93,7 +93,7 @@ $(document).ready(function () {
 
 (function () {
   var elements = document.querySelectorAll(
-    "#assetReceiveDate, #assetUsedStartDate, #depreciationStartDate, #warrantyDate"
+    "#assetReceiveDate, #assetUsedStartDate, #depreciationStartDate, #warrantyDate, #depreciationStartDate"
   );
   elements.forEach(function (element) {
     element.flatpickr({ monthSelectorType: "static" });

@@ -97,16 +97,24 @@ $(function () {
         });
     }
 
-    $(".datatables-po-data tbody").on(
-        "click",
-        ".delete-record",
-        function () {
-            s.DataTable()
-                .row($(this).parents("tr"))
-                .remove()
-                .draw();
-        }
-    );
+    // Show Delete Confirmation
+   $(".datatables-po-data tbody").on("click", ".delete-record", function () {
+
+    var clickedRow = $(this).closest("tr");
+    $("#deleteConfirmation").modal("show");
+
+    $("#deleteConfirmation").data("clickedRow", clickedRow);
+  });
+
+  // Delete Data
+  $("#deleteConfirmation").on("click", ".btn-confirm", function () {
+    var clickedRow = $("#deleteConfirmation").data("clickedRow");
+    
+    var table = $(".datatables-po-data").DataTable();
+    table.row(clickedRow).remove().draw();
+
+    $("#deleteConfirmation").modal("hide");
+  });
 });
 
 $(document).ready(function () {

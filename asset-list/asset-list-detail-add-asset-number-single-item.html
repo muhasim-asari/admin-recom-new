@@ -299,19 +299,19 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="../asset-depreciation/asset-depreciation.html" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-chart-line-variant"></i>
                 <div data-i18n="Asset Depreciation">Asset Depreciation</div>
               </a>
             </li>
-            <li class="menu-item">
+         <!--   <li class="menu-item">
               <a href="#" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-chart-line"></i>
                 <div data-i18n="Depreciation N/A">Depreciation N/A</div>
               </a>
-            </li>
+            </li> -->
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="../asset-wo-tag/asset-w-o-tags.html" class="menu-link">
                 <i class="menu-icon tf-icons mdi mdi-tag-outline"></i>
                 <div data-i18n="Asset W/O Tags">Asset W/O Tags</div>
               </a>
@@ -394,21 +394,40 @@
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons mdi mdi-wrench-clock-outline"></i>
-                <div data-i18n="Periodic Maintenance">Periodic Maintenance</div>
+                  <i class="menu-icon tf-icons mdi mdi-wrench-clock-outline"></i>
+                  <div data-i18n="Periodic Maintenance">Periodic Maintenance</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Maintenance Group">Maintenance Group</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Asset Maintenance">Asset Maintenance</div>
-                  </a>
-                </li>
+                  <li class="menu-item">
+                      <a href="../asset-maintenance/maintenance-group.html" class="menu-link">
+                          <div data-i18n="Maintenance Group">Maintenance Group</div>
+                      </a>
+                  </li>
+                  <li class="menu-item">
+                      <a href="#" class="menu-link">
+                          <div data-i18n="Asset Maintenance">Asset Maintenance</div>
+                      </a>
+                  </li>
+                  <li class="menu-item">
+                      <a href="#" class="menu-link">
+                          <div data-i18n="Maintenance Due List">Maintenance Due List</div>
+                      </a>
+                  </li>
               </ul>
+            </li>
+
+            <!-- Report -->
+            <li class="menu-header fw-light mt-4">
+              <span class="menu-header-text">Report</span>
+            </li>
+            <li class="menu-item">
+              <a
+                href="../report/depreciation-report.html"
+                class="menu-link"
+              >
+                <i class="menu-icon tf-icons mdi mdi-file-chart-outline"></i>
+                <div data-i18n="Depreciation Report">Depreciation Report</div>
+              </a>
             </li>
 
             <li class="menu-header fw-light mt-4">
@@ -563,7 +582,7 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
                 <span class="text-muted fw-bold"
-                  ><a href="./asset-list-detail.html">Asset Detail/</a> Add
+                  ><a href="./asset-list-detail-single.html">Asset Detail/</a> Add
                   item Number</span
                 >
               </h4>
@@ -732,86 +751,117 @@
                       <hr class="my-4 mx-n4" />
 
                       <!-- Data Items -->
-                      <div class="row">
-                        <h4>Data Items</h4>
-                        <!-- Quantity -->
+                      <div class="row g-4">
+                        <h4 class="mb-0">Data Items</h4>
+                        <!-- Left -->
                         <div class="col-md-6">
-                          <div class="form-floating form-floating-outline mb-4">
-                            <input
-                              type="number"
-                              class="form-control"
-                              placeholder="112233"
-                              id="quantity"
-                              value=""
-                            />
-                            <label for="quantity"
-                              >Quantity
-                              <span class="text-danger">*</span></label
-                            >
-                          </div>
-                        </div>
-
-                        <!-- Received Date -->
-                        <div class="col-md-6">
-                          <div class="input-group input-group-merge mb-4">
-                            <div class="form-floating form-floating-outline">
-                              <input
-                                type="text"
-                                class="form-control flatpickr-input active"
-                                placeholder="DD-MMM-YYYY"
-                                id="assetReceiveDate"
-                                readonly="readonly"
-                              />
-                              <label for="assetReceiveDate"
-                                >Received Date</label
-                              >
+                          <div class="row g-4">
+                            <!-- Quantity -->
+                            <div class="col-md-12">
+                              <div class="form-floating form-floating-outline">
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  placeholder="112233"
+                                  id="quantity"
+                                  value=""
+                                />
+                                <label for="quantity"
+                                  >Quantity
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
                             </div>
-                            <span class="input-group-text cursor-pointer"
-                              ><i class="mdi mdi-calendar-month-outline"></i
-                            ></span>
-                          </div>
-                        </div>
 
-                        <!-- Unit Of Measurement -->
-                        <div class="col-md-6">
-                          <div class="form-floating form-floating-outline mb-4">
-                            <select
-                              class="form-select"
-                              id="assetUom"
-                              aria-label="assetUom"
-                            >
-                              <option selected="">
-                                Choose Unit of Measurement
-                              </option>
-                            </select>
-                            <label for="assetUom"
-                              >Asset Unit of Measurement
-                              <span class="text-danger">*</span></label
-                            >
-                          </div>
-                        </div>
-
-                        <!-- Use Start Date -->
-                        <div class="col-md-6">
-                          <div class="input-group input-group-merge mb-4">
-                            <div class="form-floating form-floating-outline">
-                              <input
-                                type="text"
-                                class="form-control flatpickr-input active"
-                                placeholder="DD-MMM-YYYY"
-                                id="assetUsedStartDate"
-                                readonly="readonly"
-                              />
-                              <label for="assetUsedStartDate"
-                                >Used Start Date</label
-                              >
+                            <!-- Unit Of Measurement -->
+                            <div class="col-md-12">
+                              <div class="form-floating form-floating-outline">
+                                <select
+                                  class="form-select"
+                                  id="assetUom"
+                                  aria-label="assetUom"
+                                >
+                                  <option selected="">
+                                    Choose Unit of Measurement
+                                  </option>
+                                </select>
+                                <label for="assetUom"
+                                  >Asset Unit of Measurement
+                                  <span class="text-danger">*</span></label
+                                >
+                              </div>
                             </div>
-                            <span class="input-group-text cursor-pointer"
-                              ><i class="mdi mdi-calendar-month-outline"></i
-                            ></span>
+
+                            <!-- Received Date -->
+                            <div class="col-md-12">
+                              <div class="input-group input-group-merge">
+                                <div class="form-floating form-floating-outline">
+                                  <input
+                                    type="text"
+                                    class="form-control flatpickr-input active"
+                                    placeholder="DD-MMM-YYYY"
+                                    id="assetReceiveDate"
+                                    readonly="readonly"
+                                  />
+                                  <label for="assetReceiveDate"
+                                    >Received Date</label
+                                  >
+                                </div>
+                                <span class="input-group-text cursor-pointer"
+                                  ><i class="mdi mdi-calendar-month-outline"></i
+                                ></span>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
+                        <!-- Right -->
+                        <div class="col-md-6">
+                          <div class="row g-4">
+                            <!-- Use Start Date -->
+                            <div class="col-md-12">
+                              <div class="input-group input-group-merge">
+                                <div class="form-floating form-floating-outline">
+                                  <input
+                                    type="text"
+                                    class="form-control flatpickr-input active"
+                                    placeholder="DD-MMM-YYYY"
+                                    id="assetUsedStartDate"
+                                    readonly="readonly"
+                                  />
+                                  <label for="assetUsedStartDate"
+                                    >Used Start Date<span class="text-danger"> *</span></label
+                                  >
+                                </div>
+                                <span class="input-group-text cursor-pointer"
+                                  ><i class="mdi mdi-calendar-month-outline"></i
+                                ></span>
+                              </div>
+                            </div>
+
+                             <!-- Depreciation Start Date -->
+                            <div class="col-md-12">
+                              <div class="input-group input-group-merge">
+                                <div class="form-floating form-floating-outline">
+                                  <input
+                                    type="text"
+                                    class="form-control flatpickr-input active"
+                                    placeholder="DD-MMM-YYYY"
+                                    id="depreciationStartDate"
+                                    readonly="readonly"
+                                  />
+                                  <label for="depreciationStartDate"
+                                    >Depreciation Start Date<span class="text-danger"> *</span></label
+                                  >
+                                </div>
+                                <span class="input-group-text cursor-pointer"
+                                  ><i class="mdi mdi-calendar-month-outline"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="border-2 mb-0"/>
                         <!-- Currency & Rate -->
                         <div class="col-md-6">
                           <h5>Currency & Rate</h5>
